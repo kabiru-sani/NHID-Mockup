@@ -23,18 +23,32 @@
                 <div class="nk-sidebar-inner" data-simplebar>
                     <div class="nk-menu-content menu-active" data-content="navHospital">
                         <div class="nk-apps-brand">
-                            <a href="private-dashboard.html" class="logo-link">
-                                <img class="logo-light logo-img" src="./assets/images/nhid-logo.png" srcset="./images/logo-small2x.png 2x" alt="logo">
-                                <img class="logo-dark logo-img" src="./assets/images/nhid-logo.png" srcset="./images/logo-dark-small2x.png 2x" alt="logo-dark">
+                            <a href="federal-dashboard.html" class="logo-link">
+                                <img class="logo-light logo-img" src="./assets/images/nhid-logo.png" srcset="./images/nhid-logo2x.png 2x" alt="logo">
+                                <img class="logo-dark logo-img" src="./assets/images/nhid-logo.png" srcset="./images/lnhid-logo2x.png 2x" alt="logo-dark">
                             </a>
                         </div>
                         <!-- <h5 class="title">NHID</h5> -->
                         <ul class="nk-menu">
                             <li class="nk-menu-item">
-                                <a href="html/hospital/index.html" class="nk-menu-link">
+                                <a href="nthc-dashboard.html" class="nk-menu-link">
                                     <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span>
                                     <span class="nk-menu-text">Dashboard</span>
                                 </a>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-home-fill"></em></span>
+                                    <span class="nk-menu-text">Tertiary Hospitals</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="add-hospital.html" class="nk-menu-link"><span class="nk-menu-text">Add Hospital </span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="manage-hospital-html" class="nk-menu-link"><span class="nk-menu-text">Manage Hospitals</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
                             </li><!-- .nk-menu-item -->
                             <li class="nk-menu-item">
                                 <a href="html/hospital/appointment.html" class="nk-menu-link">
@@ -45,7 +59,7 @@
                             <li class="nk-menu-item has-sub">
                                 <a href="#" class="nk-menu-link nk-menu-toggle">
                                     <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
-                                    <span class="nk-menu-text">Patient</span>
+                                    <span class="nk-menu-text">Patients Record</span>
                                 </a>
                                 <ul class="nk-menu-sub">
                                     <li class="nk-menu-item">
@@ -62,7 +76,7 @@
                             <li class="nk-menu-item has-sub">
                                 <a href="#" class="nk-menu-link nk-menu-toggle">
                                     <span class="nk-menu-icon"><em class="icon ni ni-plus-medi-fill"></em></span>
-                                    <span class="nk-menu-text">Doctors / Nurses</span>
+                                    <span class="nk-menu-text">Manage Medical / Non-Medical Staff</span>
                                 </a>
                                 <ul class="nk-menu-sub">
                                     <li class="nk-menu-item">
@@ -73,30 +87,11 @@
                                     </li>
                                 </ul><!-- .nk-menu-sub -->
                             </li><!-- .nk-menu-item -->
-                            <li class="nk-menu-item has-sub">
-                                <a href="#" class="nk-menu-link nk-menu-toggle">
-                                    <span class="nk-menu-icon"><em class="icon ni ni-coin-alt-fill"></em></span>
-                                    <span class="nk-menu-text">Finance</span>
-                                </a>
-                                <ul class="nk-menu-sub">
-                                    <li class="nk-menu-item">
-                                        <a href="html/hospital/income-list.html" class="nk-menu-link"><span class="nk-menu-text">Income</span></a>
-                                    </li>
-                                    <li class="nk-menu-item">
-                                        <a href="html/hospital/expense-list.html" class="nk-menu-link"><span class="nk-menu-text">Expense</span></a>
-                                    </li>
-                                    <li class="nk-menu-item">
-                                        <a href="html/hospital/invoice-list.html" class="nk-menu-link"><span class="nk-menu-text">Invoice List</span></a>
-                                    </li>
-                                    <li class="nk-menu-item">
-                                        <a href="html/hospital/invoice-details.html" class="nk-menu-link"><span class="nk-menu-text">Invoice Details</span></a>
-                                    </li>
-                                </ul><!-- .nk-menu-sub -->
-                            </li><!-- .nk-menu-item -->
+                            
                             <li class="nk-menu-item has-sub">
                                 <a href="#" class="nk-menu-link nk-menu-toggle">
                                     <span class="nk-menu-icon"><em class="icon ni ni-activity-round-fill"></em></span>
-                                    <span class="nk-menu-text">Monitor Hospital</span>
+                                    <span class="nk-menu-text">Hospital Inventory</span>
                                 </a>
                                 <ul class="nk-menu-sub">
                                     <li class="nk-menu-item">
@@ -129,18 +124,6 @@
                                         <a href="html/hospital/death-report.html" class="nk-menu-link"><span class="nk-menu-text">Death Report</span></a>
                                     </li>
                                 </ul><!-- .nk-menu-sub -->
-                            </li><!-- .nk-menu-item -->
-                            <li class="nk-menu-item">
-                                <a href="html/hospital/user-profile.html" class="nk-menu-link">
-                                    <span class="nk-menu-icon"><em class="icon ni ni-user-fill"></em></span>
-                                    <span class="nk-menu-text">User Profile</span>
-                                </a>
-                            </li><!-- .nk-menu-item -->
-                            <li class="nk-menu-item">
-                                <a href="html/hospital/settings.html" class="nk-menu-link">
-                                    <span class="nk-menu-icon"><em class="icon ni ni-setting-fill"></em></span>
-                                    <span class="nk-menu-text">Setting</span>
-                                </a>
                             </li><!-- .nk-menu-item -->
                         </ul><!-- .nk-menu -->
                     </div>
@@ -426,7 +409,7 @@
                                 <div class="nk-block-head nk-block-head-sm">
                                     <div class="nk-block-between">
                                         <div class="nk-block-head-content">
-                                            <h3 class="nk-block-title page-title">State/Secondary Hospital Dashboard</h3>
+                                            <h3 class="nk-block-title page-title">National Tertiary Hospital Commission Dashboard</h3>
                                         </div><!-- .nk-block-head-content -->
                                         <!-- <div class="nk-block-head-content">
                                             <a data-bs-toggle="modal" href="#addItems" class="btn btn-icon btn-primary d-md-none"><em class="icon ni ni-plus"></em></a>
@@ -436,14 +419,29 @@
                                 </div>
                                 <div class="nk-block">
                                     <div class="row g-gs">
-                                        <div class="col-md-6 col-xxl-3">
+                                        <div class="col-md-4 col-xxl-3">
                                             <div class="card">
                                                 <div class="card-inner">
                                                     <ul class="nk-store-statistics">
                                                         <li class="item">
                                                             <div class="info">
-                                                                <div class="fs-14px fw-bold">Total Medical Doctors</div>
-                                                                <div class="count">200</div>
+                                                                <div class="fs-14px fw-bold">Total Tertiary Hospitals </div>
+                                                                <div class="count">470</div>
+                                                            </div>
+                                                            <em class="icon bg-primary-dim ni ni-home-fill"></em>
+                                                        </li>
+                                                    </ul>
+                                                </div><!-- .card-inner -->
+                                            </div><!-- .card -->
+                                        </div><!-- .col -->
+                                        <div class="col-md-4 col-xxl-3">
+                                            <div class="card">
+                                                <div class="card-inner">
+                                                    <ul class="nk-store-statistics">
+                                                        <li class="item">
+                                                            <div class="info">
+                                                                <div class="fs-14px fw-bold">Total Medical Staff</div>
+                                                                <div class="count">2000</div>
                                                             </div>
                                                             <em class="icon bg-primary-dim ni ni-users"></em>
                                                         </li>
@@ -451,14 +449,14 @@
                                                 </div><!-- .card-inner -->
                                             </div><!-- .card -->
                                         </div><!-- .col -->
-                                        <div class="col-md-6 col-xxl-3">
+                                        <div class="col-md-4 col-xxl-3">
                                             <div class="card">
                                                 <div class="card-inner">
                                                     <ul class="nk-store-statistics">
                                                         <li class="item">
                                                             <div class="info">
-                                                                <div class="fs-14px fw-bold">Total Nurses </div>
-                                                                <div class="count">1,470</div>
+                                                                <div class="fs-14px fw-bold">Total Non-Medical Staff </div>
+                                                                <div class="count">1,170</div>
                                                             </div>
                                                             <em class="icon bg-primary-dim ni ni-users"></em>
                                                         </li>
@@ -466,6 +464,8 @@
                                                 </div><!-- .card-inner -->
                                             </div><!-- .card -->
                                         </div><!-- .col -->
+
+                                        
 
                                         <div class="col-md-6 col-xxl-3">
                                             <div class="card">
