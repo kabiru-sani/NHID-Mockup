@@ -99,19 +99,22 @@
         if (username.length == "" || password.length == "") {
             alert("Username or password cannot be empty!");
             return;
-        } else if (username === "superadmin@demo" && password === "12345") {
+        } else if (username === "admin@demo" && password === "12345") {
             window.location.replace("superAdmin/super-admin-dashboard.html");
-        } else if (username === "owner" && password === "12345") {
-            window.location.replace("RiskOwner/riskowner_dashboard.html");
+        } else if (username === "federal@demo" && password === "12345") {
+            window.location.replace("FederalHospital/federal-dashboard.html");
         }
-        else if (username === "manager" && password === "12345") {
-            window.location.replace("BranchLevelRiskManager/branchlevel_dashboard.html");
+        else if (username === "state@demo" && password === "12345") {
+            window.location.replace("StateHospital/state-dashboard.html");
         }
-        else if (username === "senior" && password === "12345") {
-            window.location.replace("dashboard.html");
+        else if (username === "local@demo" && password === "12345") {
+            window.location.replace("LocalHospital/local-dashboard.html");
+        }
+        else if (username === "private@demo" && password === "12345") {
+            window.location.replace("PrivateHospital/private-dashboard.html");
         }
          else {
-            alert("Please enter valid information");
+            alert("Please provide valid login information");
             return;
         }
         }
