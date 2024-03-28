@@ -19,58 +19,107 @@
 <body class="nk-body ui-rounder npc-default has-sidebar ">
     <div class="nk-app-root">
         <div class="nk-sidebar" data-content="sidebarMenu">
+            <div class="nk-sidebar-bar">
+                <div class="nk-apps-brand">
+                    <a href="NHIS/nhis-dashboard.html" class="logo-link">
+                        <img class="logo-light logo-img" src="./assets/images/favicon.png" srcset="./assets/images/favicon.png 2x" alt="logo">
+                        <img class="logo-dark logo-img" src="./assets/images/favicon.png" srcset="./assets/images/favicon.png 2x" alt="logo-dark">
+                    </a>
+                </div>
+                <div class="nk-sidebar-element">
+                    <div class="nk-sidebar-body">
+                        <div class="nk-sidebar-content" data-simplebar>
+                            <div class="nk-sidebar-menu">
+                                <!-- Menu -->
+                                <ul class="nk-menu apps-menu">
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navPharmacy">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-capsule"></em></span>
+                                        </a>
+                                    </li>
+                                    <li class="nk-menu-item active">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navHospital">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-plus-medi"></em></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navApps">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-menu-circled"></em></span>
+                                        </a>
+                                    </li>
+                                    <!-- <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navPages">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-files"></em></span>
+                                        </a>
+                                    </li> -->
+                                    
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="nk-sidebar-main is-light">
                 <div class="nk-sidebar-inner" data-simplebar>
-                    <div class="nk-menu-content menu-active" data-content="navHospital">
-                        <div class="nk-apps-brand">
-                            <a href="federal-dashboard.html" class="logo-link">
-                                <img class="logo-light logo-img" src="./assets/images/nhid-logo.png" srcset="./assets/images/nhid-logo.png 2x" alt="logo">
-                                <img class="logo-dark logo-img" src="./assets/images/nhid-logo.png" srcset="./assets/images/nhid-logo.png 2x" alt="logo-dark">
-                            </a>
-                        </div>
-                        <!-- <h5 class="title">NHID</h5> -->
+                    <div class="nk-menu-content" data-content="navPharmacy">
+                        <h5 class="title">Pharmacy</h5>
                         <ul class="nk-menu">
                             <li class="nk-menu-item">
-                                <a href="NHIS/nhis-dashboard.html" class="nk-menu-link">
+                                <a href="NHIS/nhis-hospitals.html" class="nk-menu-link">
                                     <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span>
                                     <span class="nk-menu-text">Dashboard</span>
                                 </a>
                             </li><!-- .nk-menu-item -->
-                            <li class="nk-menu-item">
-                                <a href="NHIS/nhis-hospitals.html" class="nk-menu-link">
-                                    <span class="nk-menu-icon"><em class="icon ni ni-home-fill"></em></span>
-                                    <span class="nk-menu-text">NHIS Acredited Hospitals</span>
-                                </a>
-                            </li><!-- .nk-menu-item -->
-                            
                             <li class="nk-menu-item has-sub">
                                 <a href="#" class="nk-menu-link nk-menu-toggle">
-                                    <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
-                                    <span class="nk-menu-text">NHIS Patients Record</span>
+                                    <span class="nk-menu-icon"><em class="icon ni ni-capsule-fill"></em></span>
+                                    <span class="nk-menu-text">Medicine</span>
                                 </a>
                                 <ul class="nk-menu-sub">
                                     <li class="nk-menu-item">
-                                        <a href="html/hospital/patient-add.html" class="nk-menu-link"><span class="nk-menu-text">Add Patient</span></a>
+                                        <a href="#" class="nk-menu-link"><span class="nk-menu-text">Add Medicine</span></a>
                                     </li>
                                     <li class="nk-menu-item">
-                                        <a href="html/hospital/patient-list.html" class="nk-menu-link"><span class="nk-menu-text">IPD / OPD Patients</span></a>
+                                        <a href="#" class="nk-menu-link"><span class="nk-menu-text">Medicine List</span></a>
                                     </li>
                                     <li class="nk-menu-item">
-                                        <a href="html/hospital/patient-profile.html" class="nk-menu-link"><span class="nk-menu-text">Patient Profile</span></a>
+                                        <a href="#" class="nk-menu-link"><span class="nk-menu-text">Medicine Details</span></a>
                                     </li>
                                 </ul><!-- .nk-menu-sub -->
                             </li><!-- .nk-menu-item -->
                             <li class="nk-menu-item has-sub">
                                 <a href="#" class="nk-menu-link nk-menu-toggle">
-                                    <span class="nk-menu-icon"><em class="icon ni ni-plus-medi-fill"></em></span>
-                                    <span class="nk-menu-text">NHIS Accredited Hospitals Staff</span>
+                                    <span class="nk-menu-icon"><em class="icon ni ni-home-fill"></em></span>
+                                    <span class="nk-menu-text">Manufacturer</span>
                                 </a>
                                 <ul class="nk-menu-sub">
                                     <li class="nk-menu-item">
-                                        <a href="html/hospital/doctor-nurse-add.html" class="nk-menu-link"><span class="nk-menu-text">Add Doctor / Nurses</span></a>
+                                        <a href="NHIS/nhis-hospitals.html" class="nk-menu-link"><span class="nk-menu-text">Manufacturer List</span></a>
                                     </li>
                                     <li class="nk-menu-item">
-                                        <a href="html/hospital/doctor-nurse-list.html" class="nk-menu-link"><span class="nk-menu-text">Manage Doctors / Nurses</span></a>
+                                        <a href="NHIS/nhis-hospitals.html" class="nk-menu-link"><span class="nk-menu-text">Manufacturer Ledger</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-repeat"></em></span>
+                                    <span class="nk-menu-text">Return</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="NHIS/nhis-hospitals.html" class="nk-menu-link"><span class="nk-menu-text">Add Wastage Return</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="NHIS/nhis-hospitals.html" class="nk-menu-link"><span class="nk-menu-text">Wastage Return List</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="NHIS/nhis-hospitals.html" class="nk-menu-link"><span class="nk-menu-text">Add Manufacture Return</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="NHIS/nhis-hospitals.html" class="nk-menu-link"><span class="nk-menu-text">Manufacturer Return List</span></a>
                                     </li>
                                 </ul><!-- .nk-menu-sub -->
                             </li><!-- .nk-menu-item -->
@@ -78,40 +127,129 @@
                             <li class="nk-menu-item has-sub">
                                 <a href="#" class="nk-menu-link nk-menu-toggle">
                                     <span class="nk-menu-icon"><em class="icon ni ni-activity-round-fill"></em></span>
-                                    <span class="nk-menu-text">Hospital Inventory Report</span>
+                                    <span class="nk-menu-text">Reports</span>
                                 </a>
                                 <ul class="nk-menu-sub">
                                     <li class="nk-menu-item">
-                                        <a href="html/hospital/birth-report.html" class="nk-menu-link"><span class="nk-menu-text">Birth Report</span></a>
+                                        <a href="NHIS/nhis-hospitals.html" class="nk-menu-link"><span class="nk-menu-text">Sales Report</span></a>
                                     </li>
                                     <li class="nk-menu-item">
-                                        <a href="html/hospital/blood-bank.html" class="nk-menu-link"><span class="nk-menu-text">Blood Bank</span></a>
+                                        <a href="NHIS/nhis-hospitals.html" class="nk-menu-link"><span class="nk-menu-text">Purchase Report</span></a>
                                     </li>
                                     <li class="nk-menu-item">
-                                        <a href="html/hospital/inventory-items.html" class="nk-menu-link"><span class="nk-menu-text">Inventory Items Reports</span></a>
+                                        <a href="NHIS/nhis-hospitals.html" class="nk-menu-link"><span class="nk-menu-text">Stock Report</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            
+                        </ul><!-- .nk-menu -->
+                    </div>
+                    <div class="nk-menu-content menu-active" data-content="navHospital">
+                        <h5 class="title">Hospital Manegment</h5>
+                        <ul class="nk-menu">
+                            <li class="nk-menu-item">
+                                <a href="NHIS/nhis-dashboard.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span>
+                                    <span class="nk-menu-text">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="NHIS/nhis-hospitals.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-home-fill"></em></span>
+                                    <span class="nk-menu-text">NHIS Acredited Hospitals</span>
+                                </a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="NHIS/nhis-dashboard.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-note-add-fill"></em></span>
+                                    <span class="nk-menu-text">Appointment List</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                    <span class="nk-menu-text">Patient</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="NHIS/nhis-dashboard.html" class="nk-menu-link"><span class="nk-menu-text">Add Patient</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="NHIS/nhis-dashboard.htmll" class="nk-menu-link"><span class="nk-menu-text">IPD / OPD Patients</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="NHIS/nhis-dashboard.html" class="nk-menu-link"><span class="nk-menu-text">Patient Profile</span></a>
                                     </li>
                                 </ul><!-- .nk-menu-sub -->
                             </li><!-- .nk-menu-item -->
                             <li class="nk-menu-item has-sub">
                                 <a href="#" class="nk-menu-link nk-menu-toggle">
-                                    <span class="nk-menu-icon"><em class="icon ni ni-panel-fill"></em></span>
-                                    <span class="nk-menu-text">NHIS Reports</span>
+                                    <span class="nk-menu-icon"><em class="icon ni ni-plus-medi-fill"></em></span>
+                                    <span class="nk-menu-text">Doctors / Nurses</span>
                                 </a>
                                 <ul class="nk-menu-sub">
                                     <li class="nk-menu-item">
-                                        <a href="html/hospital/bed-group.html" class="nk-menu-link"><span class="nk-menu-text">Bed Group</span></a>
+                                        <a href="NHIS/nhis-dashboard.html" class="nk-menu-link"><span class="nk-menu-text">Add Doctor / Nurses</span></a>
                                     </li>
                                     <li class="nk-menu-item">
-                                        <a href="html/hospital/bed-allotment.html" class="nk-menu-link"><span class="nk-menu-text">Bed Allotment</span></a>
-                                    </li>
-                                    <li class="nk-menu-item">
-                                        <a href="html/hospital/department.html" class="nk-menu-link"><span class="nk-menu-text">Department</span></a>
-                                    </li>
-                                    <li class="nk-menu-item">
-                                        <a href="html/hospital/death-report.html" class="nk-menu-link"><span class="nk-menu-text">Death Report</span></a>
+                                        <a href="NHIS/nhis-dashboard.html" class="nk-menu-link"><span class="nk-menu-text">Doctors / Nurses</span></a>
                                     </li>
                                 </ul><!-- .nk-menu-sub -->
                             </li><!-- .nk-menu-item -->
+                            
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-activity-round-fill"></em></span>
+                                    <span class="nk-menu-text">Monitor Hospital</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="NHIS/nhis-dashboard.html" class="nk-menu-link"><span class="nk-menu-text">Birth Report</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="NHIS/nhis-dashboard.html" class="nk-menu-link"><span class="nk-menu-text">Blood Bank</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="NHIS/nhis-dashboard.html" class="nk-menu-link"><span class="nk-menu-text">Inventory Items Reports</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                        </ul><!-- .nk-menu -->
+                    </div>
+                    
+                    <div class="nk-menu-content" data-content="navApps">
+                        <h5 class="title">Apps</h5>
+                        <ul class="nk-menu">
+                            <li class="nk-menu-item">
+                                <a href="NHIS/nhis-dashboard.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-inbox-fill"></em></span>
+                                    <span class="nk-menu-text">Mailbox</span>
+                                </a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="NHIS/nhis-dashboard.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-chat-fill"></em></span>
+                                    <span class="nk-menu-text">Messages</span>
+                                </a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="NHIS/nhis-dashboard.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-folder-fill"></em></span>
+                                    <span class="nk-menu-text">File Manager</span>
+                                </a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="NHIS/nhis-dashboard.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-chat-circle-fill"></em></span>
+                                    <span class="nk-menu-text">Chats</span>
+                                </a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="NHIS/nhis-dashboard.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-calender-date-fill"></em></span>
+                                    <span class="nk-menu-text">Calendar</span>
+                                </a>
+                            </li>
                         </ul><!-- .nk-menu -->
                     </div>
                 </div>
