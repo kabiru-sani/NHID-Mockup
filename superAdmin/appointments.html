@@ -591,11 +591,19 @@
                                 <div class="nk-block-head nk-block-head-sm">
                                     <div class="nk-block-between g-3">
                                         <div class="nk-block-head-content">
-                                            <h3 class="nk-block-title page-title">All Hospitals Module</h3>
+                                            <h3 class="nk-block-title page-title">Appointment List</h3>
+                                            <div class="nk-block-des text-soft d-none d-md-inline-flex">
+                                                <ul class="breadcrumb breadcrumb-pipe">
+                                                    <li class="breadcrumb-item active"><a href="#">Today's Total (150)</a></li>
+                                                    <li class="breadcrumb-item "><a href="#">Visited (47)</a></li>
+                                                    <li class="breadcrumb-item"><a href="#">Waiting (12)</a></li>
+                                                    <li class="breadcrumb-item "><a href="#">Canceled (1)</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                         <div class="nk-block-head-content">
-                                            <a data-bs-toggle="modal" href="#addBirth" class="btn btn-icon btn-primary d-md-none"><em class="icon ni ni-plus"></em></a>
-                                            <a data-bs-toggle="modal" href="#addBirth" class="btn btn-primary d-none d-md-inline-flex"><em class="icon ni ni-plus"></em><span>Register Hospital</span></a>
+                                            <a data-bs-toggle="modal" href="#addAppointment" class="btn btn-icon btn-primary d-md-none"><em class="icon ni ni-plus"></em></a>
+                                            <a data-bs-toggle="modal" href="#addAppointment" class="btn btn-primary d-none d-md-inline-flex"><em class="icon ni ni-plus"></em><span>Add Appointment</span></a>
                                         </div><!-- .nk-block-head-content -->
                                     </div>
                                 </div><!-- .nk-block-head -->
@@ -609,8 +617,10 @@
                                                             <div class="form-wrap w-150px">
                                                                 <select class="form-select js-select2" data-search="off" data-placeholder="Bulk Action">
                                                                     <option value="">Bulk Action</option>
-                                                                    <option value="delete">Delete Selected</option>
-                                                                    <option value="edit">Edit Selected</option>
+                                                                    <option value="email">Send Email</option>
+                                                                    <option value="change">Change Doctor</option>
+                                                                    <option value="depart">Change Depart</option>
+                                                                    <option value="delete">Delete</option>
                                                                 </select>
                                                             </div>
                                                             <div class="btn-wrap">
@@ -641,7 +651,7 @@
                                                                                     </a>
                                                                                     <div class="filter-wg dropdown-menu dropdown-menu-xl dropdown-menu-end">
                                                                                         <div class="dropdown-head">
-                                                                                            <span class="sub-title dropdown-title">Filter Report</span>
+                                                                                            <span class="sub-title dropdown-title">Filter Appointment</span>
                                                                                             <div class="dropdown">
                                                                                                 <a href="#" class="btn btn-sm btn-icon">
                                                                                                     <em class="icon ni ni-more-h"></em>
@@ -650,31 +660,49 @@
                                                                                         </div>
                                                                                         <div class="dropdown-body dropdown-body-rg">
                                                                                             <div class="row gx-6 gy-3">
-                                                                                                <div class="col-12">
+                                                                                                <div class="col-6">
                                                                                                     <div class="form-group">
-                                                                                                        <label class="overline-title overline-title-alt">Hospital Name</label>
+                                                                                                        <label class="overline-title overline-title-alt">Department</label>
                                                                                                         <select class="form-select js-select2">
-                                                                                                            <option value="any">Select</option>
-                                                                                                            <option value="h1">Hospital One</option>
-                                                                                                            <option value="h1">Hospital Two</option>
-                                                                                                            <option value="h1">Hospital Three</option>
-                                                                                                            <option value="h1">Hospital Four</option>
+                                                                                                            <option value="any">Any Type</option>
+                                                                                                            <option value="medicine">Medicine</option>
+                                                                                                            <option value="gastroenterology">Gastroenterology</option>
+                                                                                                            <option value="cardiology">Cardiology</option>
+                                                                                                            <option value="orthopaedics">Orthopaedics</option>
+                                                                                                            <option value="neurology">Neurology</option>
+                                                                                                            <option value="urology">Urology</option>
                                                                                                         </select>
                                                                                                     </div>
-                                                                                                </div>
-                                                                                                <div class="col-12">
+                                                                                                </div><!-- .col -->
+                                                                                                <div class="col-6">
                                                                                                     <div class="form-group">
-                                                                                                        <label class="overline-title overline-title-alt">Hospital Type</label>
+                                                                                                        <label class="overline-title overline-title-alt">Status</label>
                                                                                                         <select class="form-select js-select2">
-                                                                                                            <option value="any">Select</option>
-                                                                                                            <option value="normal">Federal/Tertiary hospital</option>
-                                                                                                            <option value="cesarean">State/Secondary</option>
-                                                                                                            <option value="cesarean">Local Government/Primary</option>
-                                                                                                            <option value="cesarean">Private Hospitals</option>
+                                                                                                            <option value="any">Any Status</option>
+                                                                                                            <option value="visited">Visited</option>
+                                                                                                            <option value="canceled">Canceled</option>
+                                                                                                            <option value="waiting">Waiting</option>
+                                                                                                            <option value="pending">Pending</option>
+                                                                                                            <option value="deleted">Deleted</option>
                                                                                                         </select>
                                                                                                     </div>
-                                                                                                </div>
-                                                                                                <div class="col-12">
+                                                                                                </div><!-- .col -->
+                                                                                                <div class="col-6">
+                                                                                                    <div class="form-group">
+                                                                                                        <label class="overline-title overline-title-alt">Doctor</label>
+                                                                                                        <div class="form-control-wrap">
+                                                                                                            <select class="form-select js-select2" data-placeholder="Select Doctor">
+                                                                                                                <option value="">Select Doctor</option>
+                                                                                                                <option value="option_select_consulant">Joe Larson</option>
+                                                                                                                <option value="option_select_consulant">Patrick Newman</option>
+                                                                                                                <option value="option_select_consulant">Newman Freeman</option>
+                                                                                                                <option value="option_select_consulant">Jane Montgomery</option>
+                                                                                                                <option value="option_select_consulant">Emma Walker</option>
+                                                                                                            </select>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div><!-- .col -->
+                                                                                                <div class="col-6">
                                                                                                     <div class="form-group">
                                                                                                         <label class="overline-title overline-title-alt">Date</label>
                                                                                                         <div class="form-control-wrap">
@@ -684,7 +712,7 @@
                                                                                                             <input type="text" class="form-control date-picker" data-date-format="dd-mm-yyyy" placeholder="dd-mm-yyyy">
                                                                                                         </div>
                                                                                                     </div>
-                                                                                                </div>
+                                                                                                </div><!-- .col -->
                                                                                                 <div class="col-12">
                                                                                                     <div class="form-group">
                                                                                                         <button type="button" class="btn btn-secondary">Filter</button>
@@ -730,7 +758,7 @@
                                                     <div class="card-body">
                                                         <div class="search-content">
                                                             <a href="#" class="search-back btn btn-icon toggle-search" data-target="search"><em class="icon ni ni-arrow-left"></em></a>
-                                                            <input type="text" class="form-control border-transparent form-focus-none" placeholder="Search by name or id">
+                                                            <input type="text" class="form-control border-transparent form-focus-none" placeholder="Search by patient name or id">
                                                             <button class="search-submit btn btn-icon"><em class="icon ni ni-search"></em></button>
                                                         </div>
                                                     </div>
@@ -745,12 +773,15 @@
                                                                 <label class="custom-control-label" for="uid"></label>
                                                             </div>
                                                         </div>
-                                                        <div class="nk-tb-col"><span>Hospital Name</span></div>
-                                                        <div class="nk-tb-col tb-col-mb"><span class="sub-text">Accreditation No.</span></div>
-                                                        <div class="nk-tb-col tb-col-md"><span class="sub-text">Hospital Type</span></div>
-                                                        <div class="nk-tb-col tb-col-lg"><span class="sub-text">Location</span></div>
-                                                        <div class="nk-tb-col"><span>Date Accredited</span></div>
-                                                        <div class="nk-tb-col tb-col-md"><span class="sub-text">Status</span></div>
+                                                        <div class="nk-tb-col"><span>Patient</span></div>
+                                                        <div class="nk-tb-col tb-col-mb"><span>Department</span></div>
+                                                        <div class="nk-tb-col tb-col-md"><span>Doctor</span></div>
+                                                        <div class="nk-tb-col tb-col-lg"><span>Serial No</span></div>
+                                                        <div class="nk-tb-col tb-col-xxl"><span>Mobile No</span></div>
+                                                        <div class="nk-tb-col tb-col-lg"><span>Date</span></div>
+                                                        <div class="nk-tb-col tb-col-md"><span>Status</span></div>
+                                                        <div class="nk-tb-col tb-col-xxl"><span>Created By</span></div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">&nbsp;</div>
                                                     </div><!-- .nk-tb-item -->
                                                     <div class="nk-tb-item">
                                                         <div class="nk-tb-col nk-tb-col-check">
@@ -762,239 +793,810 @@
                                                         <div class="nk-tb-col">
                                                             <div class="user-card">
                                                                 <div class="user-avatar sm bg-primary-dim">
-                                                                    <span>MH</span>
+                                                                    <span>A</span>
                                                                 </div>
                                                                 <div class="user-info">
-                                                                    <span class="tb-lead">Manesk Hospital</span>
+                                                                    <span class="tb-lead">Abu Isthiyak <span class="dot dot-info d-md-none ms-1"></span></span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-mb">
-                                                            <span>NHIS/2024/0001</span>
+                                                            <span class="tb-lead-sub">Gastroenterology</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Private Hospital</span>
+                                                            <div class="user-card">
+                                                                <div class="user-avatar sm bg-primary-dim">
+                                                                    <img src="./images/avatar/a-sm.jpg" alt="">
+                                                                </div>
+                                                                <div class="user-info">
+                                                                    <span class="tb-lead">Joe Larson</span>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-lg">
-                                                            <span>Kaduna</span>
+                                                            <span>05</span>
                                                         </div>
-                                                        <div class="nk-tb-col">
-                                                            <span class="tb-date">18/12/2020 04:21 PM</span>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>+811 847-4958</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span class="tb-date">18/12/2020</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Active</span>
+                                                            <span class="tb-status text-info">Waiting</span>
+                                                            <span data-bs-toggle="tooltip" title="Waiting at 18 Dec, 2019 01:02 PM" data-bs-placement="top"><em class="icon ni ni-info"></em></span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>Janet Snyder</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
+                                                                        <em class="icon ni ni-eye-fill"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Approve">
+                                                                        <em class="icon ni ni-check-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Reject">
+                                                                        <em class="icon ni ni-cross-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editAppointment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div><!-- .nk-tb-item -->
                                                     <div class="nk-tb-item">
                                                         <div class="nk-tb-col nk-tb-col-check">
                                                             <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                                <input type="checkbox" class="custom-control-input" id="uid1">
-                                                                <label class="custom-control-label" for="uid1"></label>
+                                                                <input type="checkbox" class="custom-control-input" id="uid2">
+                                                                <label class="custom-control-label" for="uid2"></label>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col">
                                                             <div class="user-card">
-                                                                <div class="user-avatar sm bg-primary-dim">
-                                                                    <span>DH</span>
+                                                                <div class="user-avatar sm bg-orange-dim">
+                                                                    <span>A</span>
                                                                 </div>
                                                                 <div class="user-info">
-                                                                    <span class="tb-lead">Dansoho Hospital</span>
+                                                                    <span class="tb-lead">Amelia Grant <span class="dot dot-gray d-md-none ms-1"></span></span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-mb">
-                                                            <span>NHIS/2024/0021</span>
+                                                            <span class="tb-lead-sub">Medicine</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>State Hospital</span>
+                                                            <div class="user-card">
+                                                                <div class="user-avatar sm bg-primary-dim">
+                                                                    <img src="./images/avatar/b-sm.jpg" alt="">
+                                                                </div>
+                                                                <div class="user-info">
+                                                                    <span class="tb-lead">Patrick Newman</span>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-lg">
-                                                            <span>Kaduna</span>
+                                                            <span>10</span>
                                                         </div>
-                                                        <div class="nk-tb-col">
-                                                            <span class="tb-date">18/12/2020 04:21 PM</span>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>+124 394-1787</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span class="tb-date">12/02/2021</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Active</span>
+                                                            <span class="tb-status text-grey">Visited</span>
+                                                            <span data-bs-toggle="tooltip" title="Visited at 11 Fab, 2022 01:02 PM" data-bs-placement="top"><em class="icon ni ni-info"></em></span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>Ernesto Vargas</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
+                                                                        <em class="icon ni ni-eye-fill"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Approve">
+                                                                        <em class="icon ni ni-check-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Reject">
+                                                                        <em class="icon ni ni-cross-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editAppointment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div><!-- .nk-tb-item -->
                                                     <div class="nk-tb-item">
                                                         <div class="nk-tb-col nk-tb-col-check">
                                                             <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                                <input type="checkbox" class="custom-control-input" id="uid1">
-                                                                <label class="custom-control-label" for="uid1"></label>
+                                                                <input type="checkbox" class="custom-control-input" id="uid3">
+                                                                <label class="custom-control-label" for="uid3"></label>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col">
                                                             <div class="user-card">
-                                                                <div class="user-avatar sm bg-primary-dim">
-                                                                    <span>GH</span>
+                                                                <div class="user-avatar sm bg-purple-dim">
+                                                                    <span>K</span>
                                                                 </div>
                                                                 <div class="user-info">
-                                                                    <span class="tb-lead">Giwa Hospital</span>
+                                                                    <span class="tb-lead">Kristen Hawkins <span class="dot dot-gray d-md-none ms-1"></span></span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-mb">
-                                                            <span>NHIS/2024/0003</span>
+                                                            <span class="tb-lead-sub">Orthopaedics</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Federal Hospital</span>
+                                                            <div class="user-card">
+                                                                <div class="user-avatar sm bg-primary-dim">
+                                                                    <img src="./images/avatar/c-sm.jpg" alt="">
+                                                                </div>
+                                                                <div class="user-info">
+                                                                    <span class="tb-lead">Emma Walker</span>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-lg">
-                                                            <span>Ibadan</span>
+                                                            <span>02</span>
                                                         </div>
-                                                        <div class="nk-tb-col">
-                                                            <span class="tb-date">18/12/2020 04:21 PM</span>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>+168 603-2320</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span class="tb-date">12/03/2021</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Active</span>
+                                                            <span class="tb-status text-grey">Visited</span>
+                                                            <span data-bs-toggle="tooltip" title="Visited at 11 Jun, 2021 01:02 PM" data-bs-placement="top"><em class="icon ni ni-info"></em></span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>Janet Snyder</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
+                                                                        <em class="icon ni ni-eye-fill"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Approve">
+                                                                        <em class="icon ni ni-check-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Reject">
+                                                                        <em class="icon ni ni-cross-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editAppointment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div><!-- .nk-tb-item -->
                                                     <div class="nk-tb-item">
                                                         <div class="nk-tb-col nk-tb-col-check">
                                                             <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                                <input type="checkbox" class="custom-control-input" id="uid1">
-                                                                <label class="custom-control-label" for="uid1"></label>
+                                                                <input type="checkbox" class="custom-control-input" id="uid4">
+                                                                <label class="custom-control-label" for="uid4"></label>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col">
                                                             <div class="user-card">
-                                                                <div class="user-avatar sm bg-primary-dim">
-                                                                    <span>OH</span>
+                                                                <div class="user-avatar sm bg-purple-dim">
+                                                                    <span>T</span>
                                                                 </div>
                                                                 <div class="user-info">
-                                                                    <span class="tb-lead">Oxford Hospital</span>
+                                                                    <span class="tb-lead">Tommy Vasquez <span class="dot dot-danger d-md-none ms-1"></span></span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-mb">
-                                                            <span>NHIS/2024/0004</span>
+                                                            <span class="tb-lead-sub">Cardiology</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Private Hospital</span>
+                                                            <div class="user-card">
+                                                                <div class="user-avatar sm bg-primary-dim">
+                                                                    <img src="./images/avatar/d-sm.jpg" alt="">
+                                                                </div>
+                                                                <div class="user-info">
+                                                                    <span class="tb-lead">Jane Montgomery</span>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-lg">
-                                                            <span>Abuja</span>
+                                                            <span>15</span>
                                                         </div>
-                                                        <div class="nk-tb-col">
-                                                            <span class="tb-date">18/12/2020 04:21 PM</span>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>+439 271-5360</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span class="tb-date">12/04/2021</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Active</span>
+                                                            <span class="tb-status text-danger">Canceled</span>
+                                                            <span data-bs-toggle="tooltip" title="Canceled at 11 Jul, 2021 04:05 PM" data-bs-placement="top"><em class="icon ni ni-info"></em></span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>Ernesto Vargas</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
+                                                                        <em class="icon ni ni-eye-fill"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Approve">
+                                                                        <em class="icon ni ni-check-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Reject">
+                                                                        <em class="icon ni ni-cross-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editAppointment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div><!-- .nk-tb-item -->
                                                     <div class="nk-tb-item">
                                                         <div class="nk-tb-col nk-tb-col-check">
                                                             <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                                <input type="checkbox" class="custom-control-input" id="uid1">
-                                                                <label class="custom-control-label" for="uid1"></label>
+                                                                <input type="checkbox" class="custom-control-input" id="uid5">
+                                                                <label class="custom-control-label" for="uid5"></label>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col">
                                                             <div class="user-card">
-                                                                <div class="user-avatar sm bg-primary-dim">
-                                                                    <span>DH</span>
+                                                                <div class="user-avatar sm bg-teal-dim">
+                                                                    <span>A</span>
                                                                 </div>
                                                                 <div class="user-info">
-                                                                    <span class="tb-lead">Dikko Hospital</span>
+                                                                    <span class="tb-lead">Alejandro Haynes <span class="dot dot-info d-md-none ms-1"></span></span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-mb">
-                                                            <span>NHIS/2024/0301</span>
+                                                            <span class="tb-lead-sub">Orthopaedics</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Federal Hospital</span>
+                                                            <div class="user-card">
+                                                                <div class="user-avatar sm bg-primary-dim">
+                                                                    <img src="./images/avatar/c-sm.jpg" alt="">
+                                                                </div>
+                                                                <div class="user-info">
+                                                                    <span class="tb-lead">Emma Walker</span>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-lg">
-                                                            <span>Warri</span>
+                                                            <span>11</span>
                                                         </div>
-                                                        <div class="nk-tb-col">
-                                                            <span class="tb-date">18/12/2020 04:21 PM</span>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>+639 130-3150</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span class="tb-date">12/05/2021</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Active</span>
+                                                            <span class="tb-status text-info">Waiting</span>
+                                                            <span data-bs-toggle="tooltip" title="Waiting at 10 May, 2021 04:05 PM" data-bs-placement="top"><em class="icon ni ni-info"></em></span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>Janet Snyder</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
+                                                                        <em class="icon ni ni-eye-fill"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Approve">
+                                                                        <em class="icon ni ni-check-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Reject">
+                                                                        <em class="icon ni ni-cross-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editAppointment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div><!-- .nk-tb-item -->
                                                     <div class="nk-tb-item">
                                                         <div class="nk-tb-col nk-tb-col-check">
                                                             <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                                <input type="checkbox" class="custom-control-input" id="uid1">
-                                                                <label class="custom-control-label" for="uid1"></label>
+                                                                <input type="checkbox" class="custom-control-input" id="uid6">
+                                                                <label class="custom-control-label" for="uid6"></label>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col">
                                                             <div class="user-card">
-                                                                <div class="user-avatar sm bg-primary-dim">
-                                                                    <span>ABU</span>
+                                                                <div class="user-avatar sm bg-success-dim">
+                                                                    <span>B</span>
                                                                 </div>
                                                                 <div class="user-info">
-                                                                    <span class="tb-lead">ABU Teaching Hospital</span>
+                                                                    <span class="tb-lead">Brooke Harmon <span class="dot dot-gray d-md-none ms-1"></span></span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-mb">
-                                                            <span>NHIS/2024/0021</span>
+                                                            <span class="tb-lead-sub">Orthopaedics</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Federal Hospital</span>
+                                                            <div class="user-card">
+                                                                <div class="user-avatar sm bg-primary-dim">
+                                                                    <img src="./images/avatar/c-sm.jpg" alt="">
+                                                                </div>
+                                                                <div class="user-info">
+                                                                    <span class="tb-lead">Emma Walker</span>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-lg">
-                                                            <span>Kaduna</span>
+                                                            <span>12</span>
                                                         </div>
-                                                        <div class="nk-tb-col">
-                                                            <span class="tb-date">18/12/2020 04:21 PM</span>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>+963 309-1706</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span class="tb-date">12/05/2021</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Active</span>
+                                                            <span class="tb-status text-grey">Visited</span>
+                                                            <span data-bs-toggle="tooltip" title="Visited at 10 May, 2021 04:05 PM" data-bs-placement="top"><em class="icon ni ni-info"></em></span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>Janet Snyder</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
+                                                                        <em class="icon ni ni-eye-fill"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Approve">
+                                                                        <em class="icon ni ni-check-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Reject">
+                                                                        <em class="icon ni ni-cross-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editAppointment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div><!-- .nk-tb-item -->
                                                     <div class="nk-tb-item">
                                                         <div class="nk-tb-col nk-tb-col-check">
                                                             <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                                <input type="checkbox" class="custom-control-input" id="uid1">
-                                                                <label class="custom-control-label" for="uid1"></label>
+                                                                <input type="checkbox" class="custom-control-input" id="uid7">
+                                                                <label class="custom-control-label" for="uid7"></label>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col">
                                                             <div class="user-card">
-                                                                <div class="user-avatar sm bg-primary-dim">
-                                                                    <span>UH</span>
+                                                                <div class="user-avatar sm bg-gray-dim">
+                                                                    <span>T</span>
                                                                 </div>
                                                                 <div class="user-info">
-                                                                    <span class="tb-lead">Unicef Hospital</span>
+                                                                    <span class="tb-lead">Trevor Miller <span class="dot dot-gray d-md-none ms-1"></span></span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-mb">
-                                                            <span>NHIS/2024/0031</span>
+                                                            <span class="tb-lead-sub">Gastroenterology</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Local Government Hospital</span>
+                                                            <div class="user-card">
+                                                                <div class="user-avatar sm bg-primary-dim">
+                                                                    <img src="./images/avatar/a-sm.jpg" alt="">
+                                                                </div>
+                                                                <div class="user-info">
+                                                                    <span class="tb-lead">Joe Larson</span>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-lg">
-                                                            <span>Kaduna</span>
+                                                            <span>13</span>
                                                         </div>
-                                                        <div class="nk-tb-col">
-                                                            <span class="tb-date">18/12/2020 04:21 PM</span>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>+811 985-4846</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span class="tb-date">12/05/2021</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Active</span>
+                                                            <span class="tb-status text-grey">Visited</span>
+                                                            <span data-bs-toggle="tooltip" title="Visited at 10 May, 2021 04:05 PM" data-bs-placement="top"><em class="icon ni ni-info"></em></span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>Ernesto Vargas</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
+                                                                        <em class="icon ni ni-eye-fill"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Approve">
+                                                                        <em class="icon ni ni-check-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Reject">
+                                                                        <em class="icon ni ni-cross-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editAppointment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid8">
+                                                                <label class="custom-control-label" for="uid8"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <div class="user-card">
+                                                                <div class="user-avatar sm bg-danger-dim">
+                                                                    <span>L</span>
+                                                                </div>
+                                                                <div class="user-info">
+                                                                    <span class="tb-lead">Lonnie Ferguson <span class="dot dot-info d-md-none ms-1"></span></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-mb">
+                                                            <span class="tb-lead-sub">Orthopaedics</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <div class="user-card">
+                                                                <div class="user-avatar sm bg-primary-dim">
+                                                                    <img src="./images/avatar/c-sm.jpg" alt="">
+                                                                </div>
+                                                                <div class="user-info">
+                                                                    <span class="tb-lead">Emma Walker</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span>14</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>+942 238-4474</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span class="tb-date">12/05/2021</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span class="tb-status text-info">Waiting</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>Janet Snyder</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
+                                                                        <em class="icon ni ni-eye-fill"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Approve">
+                                                                        <em class="icon ni ni-check-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Reject">
+                                                                        <em class="icon ni ni-cross-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editAppointment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid9">
+                                                                <label class="custom-control-label" for="uid9"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <div class="user-card">
+                                                                <div class="user-avatar sm bg-teal-dim">
+                                                                    <span>M</span>
+                                                                </div>
+                                                                <div class="user-info">
+                                                                    <span class="tb-lead">Mack Kennedy <span class="dot dot-gray d-md-none ms-1"></span></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-mb">
+                                                            <span class="tb-lead-sub">Medicine</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <div class="user-card">
+                                                                <div class="user-avatar sm bg-primary-dim">
+                                                                    <img src="./images/avatar/b-sm.jpg" alt="">
+                                                                </div>
+                                                                <div class="user-info">
+                                                                    <span class="tb-lead">Patrick Newman</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span>19</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>+123 447-2384</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span class="tb-date">12/02/2021</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span class="tb-status text-grey">Visited</span>
+                                                            <span data-bs-toggle="tooltip" title="Visited at 10 Fab, 2021 04:05 PM" data-bs-placement="top"><em class="icon ni ni-info"></em></span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>Ernesto Vargas</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
+                                                                        <em class="icon ni ni-eye-fill"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Approve">
+                                                                        <em class="icon ni ni-check-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Reject">
+                                                                        <em class="icon ni ni-cross-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editAppointment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid10">
+                                                                <label class="custom-control-label" for="uid10"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <div class="user-card">
+                                                                <div class="user-avatar sm bg-warning-dim">
+                                                                    <span>I</span>
+                                                                </div>
+                                                                <div class="user-info">
+                                                                    <span class="tb-lead">Inez Wilkerson <span class="dot dot-gray d-md-none ms-1"></span></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-mb">
+                                                            <span class="tb-lead-sub">Medicine</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <div class="user-card">
+                                                                <div class="user-avatar sm bg-primary-dim">
+                                                                    <img src="./images/avatar/b-sm.jpg" alt="">
+                                                                </div>
+                                                                <div class="user-info">
+                                                                    <span class="tb-lead">Patrick Newman</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span>20</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>+463 471-7173</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span class="tb-date">12/02/2021</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span class="tb-status text-grey">Visited</span>
+                                                            <span data-bs-toggle="tooltip" title="Visited at 10 Fab, 2021 04:05 PM" data-bs-placement="top"><em class="icon ni ni-info"></em></span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-xxl">
+                                                            <span>Ernesto Vargas</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
+                                                                        <em class="icon ni ni-eye-fill"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Approve">
+                                                                        <em class="icon ni ni-check-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="btn btn-trigger btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Reject">
+                                                                        <em class="icon ni ni-cross-fill-c"></em>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editAppointment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div><!-- .nk-tb-item -->
                                                 </div>
                                             </div><!-- .card-inner -->
                                             <div class="card-inner">
-                                                <ul class="pagination justify-content-center justify-content-md-start">
-                                                    <li class="page-item"><a class="page-link" href="#">Prev</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                    <li class="page-item"><span class="page-link"><em class="icon ni ni-more-h"></em></span></li>
-                                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">7</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                                </ul><!-- .pagination -->
+                                                <div class="nk-block-between-md g-3">
+                                                    <div class="g">
+                                                        <ul class="pagination justify-content-center justify-content-md-start">
+                                                            <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                            <li class="page-item"><span class="page-link"><em class="icon ni ni-more-h"></em></span></li>
+                                                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                                        </ul><!-- .pagination -->
+                                                    </div>
+                                                    <div class="g">
+                                                        <div class="pagination-goto d-flex justify-content-center justify-content-md-start gx-3">
+                                                            <div>Page</div>
+                                                            <div>
+                                                                <select class="form-select js-select2" data-search="on" data-dropdown="xs center">
+                                                                    <option value="page-1">1</option>
+                                                                    <option value="page-2">2</option>
+                                                                    <option value="page-4">4</option>
+                                                                    <option value="page-5">5</option>
+                                                                    <option value="page-6">6</option>
+                                                                    <option value="page-7">7</option>
+                                                                    <option value="page-8">8</option>
+                                                                    <option value="page-9">9</option>
+                                                                    <option value="page-10">10</option>
+                                                                    <option value="page-11">11</option>
+                                                                    <option value="page-12">12</option>
+                                                                    <option value="page-13">13</option>
+                                                                    <option value="page-14">14</option>
+                                                                    <option value="page-15">15</option>
+                                                                    <option value="page-16">16</option>
+                                                                    <option value="page-17">17</option>
+                                                                    <option value="page-18">18</option>
+                                                                    <option value="page-19">19</option>
+                                                                    <option value="page-20">20</option>
+                                                                </select>
+                                                            </div>
+                                                            <div>OF 102</div>
+                                                        </div>
+                                                    </div><!-- .pagination-goto -->
+                                                </div><!-- .nk-block-between -->
                                             </div><!-- .card-inner -->
                                         </div><!-- .card-inner-group -->
                                     </div><!-- .card -->

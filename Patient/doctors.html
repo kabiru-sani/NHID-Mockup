@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+    <base href="../">
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <!-- Page Title  -->
+    <title>Patient Details</title>
+    <!-- StyleSheets  -->
+    <link rel="stylesheet" href="./assets/css/dashlite.css?ver=3.1.3">
+    <link id="skin-default" rel="stylesheet" href="./assets/css/theme.css?ver=3.1.3">
+</head>
+
+<body class="nk-body ui-rounder npc-default has-sidebar ">
+    <div class="nk-app-root">
+        <div class="nk-sidebar" data-content="sidebarMenu">
+            
+            <div class="nk-sidebar-main is-light">
+                <div class="nk-sidebar-inner" data-simplebar>
+                    <div class="nk-menu-content" data-content="navPharmacy">
+                        <h5 class="title">Pharmacy</h5>
+                        <ul class="nk-menu">
+                            <li class="nk-menu-item">
+                                <a href="html/pharmacy/index.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span>
+                                    <span class="nk-menu-text">Dashboard</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                    <span class="nk-menu-text">Customer</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/add-customer.html" class="nk-menu-link"><span class="nk-menu-text">Add Customer</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/customer.html" class="nk-menu-link"><span class="nk-menu-text">Customer List</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/customer-ledger.html" class="nk-menu-link"><span class="nk-menu-text">Customer Ledger</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-capsule-fill"></em></span>
+                                    <span class="nk-menu-text">Medicine</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/add-medicine.html" class="nk-menu-link"><span class="nk-menu-text">Add Medicine</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/medicine-list.html" class="nk-menu-link"><span class="nk-menu-text">Medicine List</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/medicine-details.html" class="nk-menu-link"><span class="nk-menu-text">Medicine Details</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-home-fill"></em></span>
+                                    <span class="nk-menu-text">Manufacturer</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/manufacturer.html" class="nk-menu-link"><span class="nk-menu-text">Manufacturer List</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/manufacturer-ledger.html" class="nk-menu-link"><span class="nk-menu-text">Manufacturer Ledger</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-repeat"></em></span>
+                                    <span class="nk-menu-text">Return</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/add-wastage-return.html" class="nk-menu-link"><span class="nk-menu-text">Add Wastage Return</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/wastage-return.html" class="nk-menu-link"><span class="nk-menu-text">Wastage Return List</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/add-manufacturer-return.html" class="nk-menu-link"><span class="nk-menu-text">Add Manufacture Return</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/manufacturer-return.html" class="nk-menu-link"><span class="nk-menu-text">Manufacturer Return List</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-user-circle-fill"></em></span>
+                                    <span class="nk-menu-text">Human resource</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/member.html" class="nk-menu-link"><span class="nk-menu-text">Member</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/members-profile-regular.html" class="nk-menu-link"><span class="nk-menu-text">Members Profile</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/attendence.html" class="nk-menu-link"><span class="nk-menu-text">Attendence</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/salary.html" class="nk-menu-link"><span class="nk-menu-text">Salary</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-coin-alt-fill"></em></span>
+                                    <span class="nk-menu-text">Finance</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/income-list.html" class="nk-menu-link"><span class="nk-menu-text">Income</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/expense-list.html" class="nk-menu-link"><span class="nk-menu-text">Expence</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/invoice-list.html" class="nk-menu-link"><span class="nk-menu-text">Invoice List</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/invoice-details.html" class="nk-menu-link"><span class="nk-menu-text">Invoice Details</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-activity-round-fill"></em></span>
+                                    <span class="nk-menu-text">Report</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/sales-report.html" class="nk-menu-link"><span class="nk-menu-text">Sales Report</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/purchase-report.html" class="nk-menu-link"><span class="nk-menu-text">Purchase Report</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/stock-report.html" class="nk-menu-link"><span class="nk-menu-text">Stock Report</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item">
+                                <a href="html/pharmacy/support.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-msg-fill"></em></span>
+                                    <span class="nk-menu-text">Support</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item">
+                                <a href="html/pharmacy/general-settings.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-setting-fill"></em></span>
+                                    <span class="nk-menu-text">Setting</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                        </ul><!-- .nk-menu -->
+                    </div>
+                    <div class="nk-menu-content menu-active" data-content="navHospital">
+                        <div class="nk-apps-brand">
+                            <a href="Patient/patient-dashboard.html" class="logo-link">
+                                <img class="logo-light logo-img" src="./assets/images/nhid-logo.png" srcset="./assets/images/nhid-logo.png 2x" alt="logo">
+                                <img class="logo-dark logo-img" src="./assets/images/nhid-logo.png" srcset="./assets/images/nhid-logo.png 2x" alt="logo-dark">
+                            </a>
+                        </div>
+                        <!-- <h5 class="title">Hospital Manegment</h5> -->
+                        <ul class="nk-menu">
+                            <li class="nk-menu-item">
+                                <a href="Patient/patient-dashboard.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span>
+                                    <span class="nk-menu-text">Dashboard</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item">
+                                <a href="Patient/pappointments.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-note-add-fill"></em></span>
+                                    <span class="nk-menu-text">My Appointments</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            
+                            <li class="nk-menu-item has-sub">
+                                <a href="Patient/doctors.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-plus-medi-fill"></em></span>
+                                    <span class="nk-menu-text">Available Doctors / Nurses</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            
+                            <li class="nk-menu-item">
+                                <a href="Patient/patient-dashboard.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-user-fill"></em></span>
+                                    <span class="nk-menu-text">My Profile</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            
+                        </ul><!-- .nk-menu -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main @s -->
+        <div class="nk-main ">
+            <!-- wrap @s -->
+            <div class="nk-wrap ">
+                <!-- main header @s -->
+                <div class="nk-header nk-header-fixed nk-header-fluid is-light">
+                    <div class="container-fluid">
+                        <div class="nk-header-wrap">
+                            <div class="nk-menu-trigger d-xl-none ms-n1">
+                                <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
+                            </div>
+                            <div class="nk-header-brand d-xl-none">
+                                <a href="html/index.html" class="logo-link">
+                                    <img class="logo-light logo-img" src="./images/logo.png" srcset="./images/logo2x.png 2x" alt="logo">
+                                    <img class="logo-dark logo-img" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
+                                </a>
+                            </div><!-- .nk-header-brand -->
+                            <div class="nk-header-search ms-3 ms-xl-0">
+                                <em class="icon ni ni-search"></em>
+                                <input type="text" class="form-control border-transparent form-focus-none" placeholder="Search anything">
+                            </div><!-- .nk-header-news -->
+                            <div class="nk-header-tools">
+                                <ul class="nk-quick-nav">
+                                    <li class="dropdown notification-dropdown">
+                                        <a href="#" class="dropdown-toggle nk-quick-nav-icon" data-bs-toggle="dropdown">
+                                            <div class="icon-status icon-status-info"><em class="icon ni ni-bell"></em></div>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-xl dropdown-menu-end">
+                                            <div class="dropdown-head">
+                                                <span class="sub-title nk-dropdown-title">Notifications</span>
+                                                <a href="#">Mark All as Read</a>
+                                            </div>
+                                            <div class="dropdown-body">
+                                                <div class="nk-notification">
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">You have requested to <span>Widthdrawl</span></div>
+                                                            <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
+                                                            <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">You have requested to <span>Widthdrawl</span></div>
+                                                            <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
+                                                            <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">You have requested to <span>Widthdrawl</span></div>
+                                                            <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
+                                                            <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .nk-notification -->
+                                            </div><!-- .nk-dropdown-body -->
+                                            <div class="dropdown-foot center">
+                                                <a href="#">View All</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="dropdown user-dropdown">
+                                        <a href="#" class="dropdown-toggle me-n1" data-bs-toggle="dropdown">
+                                            <div class="user-toggle">
+                                                <div class="user-avatar sm">
+                                                    <em class="icon ni ni-user-alt"></em>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-md dropdown-menu-end">
+                                            <div class="dropdown-inner user-card-wrap bg-lighter">
+                                                <div class="user-card">
+                                                    <div class="user-avatar">
+                                                        <span>AB</span>
+                                                    </div>
+                                                    <div class="user-info">
+                                                        <span class="lead-text">Abu Bin Ishtiyak</span>
+                                                        <span class="sub-text">info@softnio.com</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-inner">
+                                                <ul class="link-list">
+                                                    <li><a href="html/hospital/user-profile.html"><em class="icon ni ni-user-alt"></em><span>View Profile</span></a></li>
+                                                    <li><a href="html/hospital/settings.html"><em class="icon ni ni-setting-alt"></em><span>Account Setting</span></a></li>
+                                                    <li><a href="html/hospital/settings-account-log.html"><em class="icon ni ni-activity-alt"></em><span>Login Activity</span></a></li>
+                                                    <li><a class="dark-switch" href="#"><em class="icon ni ni-moon"></em><span>Dark Mode</span></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown-inner">
+                                                <ul class="link-list">
+                                                    <li><a href="index.html"><em class="icon ni ni-signout"></em><span>Sign out</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- .nk-header-wrap -->
+                    </div><!-- .container-fliud -->
+                </div>
+                <!-- main header @e -->
+                <!-- content @s -->
+                <div class="nk-content ">
+                    <div class="container-fluid">
+                        <div class="nk-content-inner">
+                            <div class="nk-content-body">
+                                <div class="nk-block-head nk-block-head-sm">
+                                    <div class="nk-block-between">
+                                        <div class="nk-block-head-content">
+                                            <h3 class="nk-block-title page-title">Available Doctors/Nurses</h3>
+                                        </div><!-- .nk-block-head-content -->
+                                        
+                                    </div><!-- .nk-block-between -->
+                                </div><!-- .nk-block-head -->
+                                <div class="row g-gs">
+                                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                                        <div class="card card-bordered">
+                                            <div class="card-inner">
+                                                <div class="team">
+                                                    <div class="team-options">
+                                                        <div class="drodown">
+                                                            <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <ul class="link-list-opt no-bdr">
+                                                                    <li><a href="#"><em class="icon ni ni-eye"></em><span>View Details</span></a></li>
+                                                                    <li><a href="#"><em class="icon ni ni-mail"></em><span>Send Email</span></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="user-card user-card-s2">
+                                                        <div class="user-avatar lg bg-primary">
+                                                            <img src="./images/avatar/c-sm.jpg" alt="">
+                                                        </div>
+                                                        <div class="user-info">
+                                                            <h6>Victoria Lynch </h6>
+                                                            <span class="badge rounded-pill bg-primary">Doctor</span>
+                                                            <span class="sub-text">FCPS</span>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="team-info">
+                                                        <li><span>Department</span><span>Gastroenterology</span></li>
+                                                        <li><span>Join Date</span><span>24 Jun 2015</span></li>
+                                                        <li><span>Contact</span><span>+88 01713-123656</span></li>
+                                                        <li><span>Email</span><span>info@softnio.com</span></li>
+                                                    </ul>
+                                                    <div class="team-view">
+                                                        <a href="#" class="btn btn-block btn-dim btn-primary"><span>View Profile</span></a>
+                                                    </div>
+                                                </div><!-- .team -->
+                                            </div><!-- .card-inner -->
+                                        </div><!-- .card -->
+                                    </div><!-- .col -->
+                                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                                        <div class="card card-bordered">
+                                            <div class="card-inner">
+                                                <div class="team">
+                                                    <div class="team-options">
+                                                        <div class="drodown">
+                                                            <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <ul class="link-list-opt no-bdr">
+                                                                    <li><a href="#"><em class="icon ni ni-eye"></em><span>View Details</span></a></li>
+                                                                    <li><a href="#"><em class="icon ni ni-mail"></em><span>Send Email</span></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="user-card user-card-s2">
+                                                        <div class="user-avatar lg bg-primary">
+                                                            <span>AB</span>
+                                                        </div>
+                                                        <div class="user-info">
+                                                            <h6>Abu Bin Ishtiyak</h6>
+                                                            <span class="badge rounded-pill bg-primary">Doctor</span>
+                                                            <span class="sub-text">MBBS, FCPS</span>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="team-info">
+                                                        <li><span>Department</span><span>Medicine</span></li>
+                                                        <li><span>Join Date</span><span>24 Jun 2015</span></li>
+                                                        <li><span>Contact</span><span>+88 01713-123656</span></li>
+                                                        <li><span>Email</span><span>info@softnio.com</span></li>
+                                                    </ul>
+                                                    <div class="team-view">
+                                                        <a href="#" class="btn btn-block btn-dim btn-primary"><span>View Profile</span></a>
+                                                    </div>
+                                                </div><!-- .team -->
+                                            </div><!-- .card-inner -->
+                                        </div><!-- .card -->
+                                    </div><!-- .col -->
+                                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                                        <div class="card card-bordered">
+                                            <div class="card-inner">
+                                                <div class="team">
+                                                    <div class="team-options">
+                                                        <div class="drodown">
+                                                            <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <ul class="link-list-opt no-bdr">
+                                                                    <li><a href="#"><em class="icon ni ni-eye"></em><span>View Details</span></a></li>
+                                                                    <li><a href="#"><em class="icon ni ni-mail"></em><span>Send Email</span></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="user-card user-card-s2">
+                                                        <div class="user-avatar lg bg-primary">
+                                                            <img src="./images/avatar/a-sm.jpg" alt="">
+                                                        </div>
+                                                        <div class="user-info">
+                                                            <h6>Ashley Lawson</h6>
+                                                            <span class="badge rounded-pill bg-primary">Doctor</span>
+                                                            <span class="sub-text">MBBS, FCPS, Surgon</span>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="team-info">
+                                                        <li><span>Department</span><span>Orthopaedics</span></li>
+                                                        <li><span>Join Date</span><span>24 Jun 2015</span></li>
+                                                        <li><span>Contact</span><span>+88 01713-123656</span></li>
+                                                        <li><span>Email</span><span>info@softnio.com</span></li>
+                                                    </ul>
+                                                    <div class="team-view">
+                                                        <a href="#" class="btn btn-block btn-dim btn-primary"><span>View Profile</span></a>
+                                                    </div>
+                                                </div><!-- .team -->
+                                            </div><!-- .card-inner -->
+                                        </div><!-- .card -->
+                                    </div><!-- .col -->
+                                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                                        <div class="card card-bordered">
+                                            <div class="card-inner">
+                                                <div class="team">
+                                                    <div class="team-options">
+                                                        <div class="drodown">
+                                                            <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <ul class="link-list-opt no-bdr">
+                                                                    <li><a href="#"><em class="icon ni ni-eye"></em><span>View Details</span></a></li>
+                                                                    <li><a href="#"><em class="icon ni ni-mail"></em><span>Send Email</span></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="user-card user-card-s2">
+                                                        <div class="user-avatar lg bg-info-dim">
+                                                            <span>JL</span>
+                                                        </div>
+                                                        <div class="user-info">
+                                                            <h6>Joe Larson</h6>
+                                                            <span class="badge rounded-pill badge-dim bg-info">Nurse</span>
+                                                            <span class="sub-text">Head Nurse</span>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="team-info">
+                                                        <li><span>Shift</span><span>Morning</span></li>
+                                                        <li><span>Join Date</span><span>24 Jun 2015</span></li>
+                                                        <li><span>Contact</span><span>+88 01713-123656</span></li>
+                                                        <li><span>Email</span><span>info@softnio.com</span></li>
+                                                    </ul>
+                                                    <div class="team-view">
+                                                        <a href="#" class="btn btn-block btn-dim btn-primary"><span>View Profile</span></a>
+                                                    </div>
+                                                </div><!-- .team -->
+                                            </div><!-- .card-inner -->
+                                        </div><!-- .card -->
+                                    </div><!-- .col -->
+                                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                                        <div class="card card-bordered">
+                                            <div class="card-inner">
+                                                <div class="team">
+                                                    <div class="team-options">
+                                                        <div class="drodown">
+                                                            <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <ul class="link-list-opt no-bdr">
+                                                                    <li><a href="#"><em class="icon ni ni-eye"></em><span>View Details</span></a></li>
+                                                                    <li><a href="#"><em class="icon ni ni-mail"></em><span>Send Email</span></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="user-card user-card-s2">
+                                                        <div class="user-avatar lg bg-danger-dim">
+                                                            <span>JM</span>
+                                                        </div>
+                                                        <div class="user-info">
+                                                            <h6>Jane Montgomery</h6>
+                                                            <span class="badge rounded-pill badge-dim bg-info">Nurse</span>
+                                                            <span class="sub-text">Clinical Nurse</span>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="team-info">
+                                                        <li><span>Shift</span><span>Night</span></li>
+                                                        <li><span>Join Date</span><span>24 Jun 2015</span></li>
+                                                        <li><span>Contact</span><span>+88 01713-123656</span></li>
+                                                        <li><span>Email</span><span>info@softnio.com</span></li>
+                                                    </ul>
+                                                    <div class="team-view">
+                                                        <a href="#" class="btn btn-block btn-dim btn-primary"><span>View Profile</span></a>
+                                                    </div>
+                                                </div><!-- .team -->
+                                            </div><!-- .card-inner -->
+                                        </div><!-- .card -->
+                                    </div><!-- .col -->
+                                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                                        <div class="card card-bordered">
+                                            <div class="card-inner">
+                                                <div class="team">
+                                                    <div class="team-options">
+                                                        <div class="drodown">
+                                                            <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <ul class="link-list-opt no-bdr">
+                                                                    <li><a href="#"><em class="icon ni ni-eye"></em><span>View Details</span></a></li>
+                                                                    <li><a href="#"><em class="icon ni ni-mail"></em><span>Send Email</span></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="user-card user-card-s2">
+                                                        <div class="user-avatar lg bg-primary">
+                                                            <img src="./images/avatar/b-sm.jpg" alt="">
+                                                        </div>
+                                                        <div class="user-info">
+                                                            <h6>Patrick Newman</h6>
+                                                            <span class="badge rounded-pill bg-primary">Doctor</span>
+                                                            <span class="sub-text">MBBS</span>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="team-info">
+                                                        <li><span>Department</span><span>Medicine</span></li>
+                                                        <li><span>Join Date</span><span>24 Jun 2015</span></li>
+                                                        <li><span>Contact</span><span>+88 01713-123656</span></li>
+                                                        <li><span>Email</span><span>info@softnio.com</span></li>
+                                                    </ul>
+                                                    <div class="team-view">
+                                                        <a href="#" class="btn btn-block btn-dim btn-primary"><span>View Profile</span></a>
+                                                    </div>
+                                                </div><!-- .team -->
+                                            </div><!-- .card-inner -->
+                                        </div><!-- .card -->
+                                    </div><!-- .col -->
+                                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                                        <div class="card card-bordered">
+                                            <div class="card-inner">
+                                                <div class="team">
+                                                    <div class="team-options">
+                                                        <div class="drodown">
+                                                            <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <ul class="link-list-opt no-bdr">
+                                                                    <li><a href="#"><em class="icon ni ni-eye"></em><span>View Details</span></a></li>
+                                                                    <li><a href="#"><em class="icon ni ni-mail"></em><span>Send Email</span></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="user-card user-card-s2">
+                                                        <div class="user-avatar lg bg-primary">
+                                                            <img src="./images/avatar/d-sm.jpg" alt="">
+                                                        </div>
+                                                        <div class="user-info">
+                                                            <h6>Jane Harris</h6>
+                                                            <span class="badge rounded-pill badge-dim bg-info">Nurse</span>
+                                                            <span class="sub-text">Assistant Nurse</span>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="team-info">
+                                                        <li><span>Shift</span><span>Evening</span></li>
+                                                        <li><span>Join Date</span><span>24 Jun 2015</span></li>
+                                                        <li><span>Contact</span><span>+88 01713-123656</span></li>
+                                                        <li><span>Email</span><span>info@softnio.com</span></li>
+                                                    </ul>
+                                                    <div class="team-view">
+                                                        <a href="#" class="btn btn-block btn-dim btn-primary"><span>View Profile</span></a>
+                                                    </div>
+                                                </div><!-- .team -->
+                                            </div><!-- .card-inner -->
+                                        </div><!-- .card -->
+                                    </div><!-- .col -->
+                                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                                        <div class="card card-bordered">
+                                            <div class="card-inner">
+                                                <div class="team">
+                                                    <div class="team-options">
+                                                        <div class="drodown">
+                                                            <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                            <div class="dropdown-menu dropdown-menu-end">
+                                                                <ul class="link-list-opt no-bdr">
+                                                                    <li><a href="#"><em class="icon ni ni-eye"></em><span>View Details</span></a></li>
+                                                                    <li><a href="#"><em class="icon ni ni-mail"></em><span>Send Email</span></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="user-card user-card-s2">
+                                                        <div class="user-avatar lg bg-primary-dim">
+                                                            <span>FB</span>
+                                                        </div>
+                                                        <div class="user-info">
+                                                            <h6>Frances Burns</h6>
+                                                            <span class="badge rounded-pill badge-dim bg-info">Nurse</span>
+                                                            <span class="sub-text">Assistant Nurse</span>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="team-info">
+                                                        <li><span>Shift</span><span>Evening</span></li>
+                                                        <li><span>Join Date</span><span>24 Jun 2015</span></li>
+                                                        <li><span>Contact</span><span>+88 01713-123656</span></li>
+                                                        <li><span>Email</span><span>info@softnio.com</span></li>
+                                                    </ul>
+                                                    <div class="team-view">
+                                                        <a href="#" class="btn btn-block btn-dim btn-primary"><span>View Profile</span></a>
+                                                    </div>
+                                                </div><!-- .team -->
+                                            </div><!-- .card-inner -->
+                                        </div><!-- .card -->
+                                    </div><!-- .col -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content @e -->
+            </div>
+            <!-- wrap @e -->
+        </div>
+        <!-- main @e -->
+    </div>
+    <!-- app-root @e -->
+    
+    <script src="./assets/js/bundle.js?ver=3.1.3"></script>
+    <script src="./assets/js/scripts.js?ver=3.1.3"></script>
+    <link rel="stylesheet" href="./assets/css/editors/quill.css?ver=3.1.3">
+    <script src="./assets/js/libs/editors/quill.js?ver=3.1.3"></script>
+    <script src="./assets/js/editors.js?ver=3.1.3"></script>
+</body>
+
+</html>
