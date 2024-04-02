@@ -18,12 +18,82 @@
 </head>
 
 <body class="nk-body ui-rounder npc-default has-sidebar ">
+
     <div class="nk-app-root">
         <div class="nk-sidebar" data-content="sidebarMenu">
+            <div class="nk-sidebar-bar">
+                <div class="nk-apps-brand">
+                    <a href="subscriber/subscriber-dashbaord.html" class="logo-link">
+                        <img class="logo-light logo-img" src="./assets/images/favicon.png" srcset="./assets/images/favicon.png 2x" alt="logo">
+                        <img class="logo-dark logo-img" src="./assets/images/favicon.png" srcset="./assets/images/favicon.png 2x" alt="logo-dark">
+                    </a>
+                </div>
+                <div class="nk-sidebar-element">
+                    <div class="nk-sidebar-body">
+                        <div class="nk-sidebar-content" data-simplebar>
+                            <div class="nk-sidebar-menu">
+                                <!-- Menu -->
+                                <ul class="nk-menu apps-menu">
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navPharmacy">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-capsule"></em></span>
+                                        </a>
+                                    </li>
+                                    <li class="nk-menu-item active">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navHospital">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-plus-medi"></em></span>
+                                        </a>
+                                    </li>
+                                    <!-- <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navDashboards">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-dashboard"></em></span>
+                                        </a>
+                                    </li> -->
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navApps">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-menu-circled"></em></span>
+                                        </a>
+                                    </li>
+                                    <!-- <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navPages">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-files"></em></span>
+                                        </a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navMisc">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-server"></em></span>
+                                        </a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navError">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-alert-c"></em></span>
+                                        </a>
+                                    </li>
+                                    <li class="nk-menu-hr"></li>
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navComponents">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-layers"></em></span>
+                                        </a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <!-- <div class="nk-sidebar-footer">
+                                <ul class="nk-menu nk-menu-md apps-menu">
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link" title="Settings">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-setting"></em></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="nk-sidebar-main is-light">
                 <div class="nk-sidebar-inner" data-simplebar>
                     <div class="nk-menu-content" data-content="navPharmacy">
-                        <h5 class="title"><img  src="./assets/images/nhid-logo.png" width="200"></h5>
+                        <h5 class="title">Pharmacy</h5>
                         <ul class="nk-menu">
                             <li class="nk-menu-item">
                                 <a href="subscriber/subscriber-dashbaord.html" class="nk-menu-link">
@@ -31,24 +101,11 @@
                                     <span class="nk-menu-text">Dashboard</span>
                                 </a>
                             </li><!-- .nk-menu-item -->
-                            <li class="nk-menu-item has-sub">
-                                <a href="#patients" class="nk-menu-link nk-menu-toggle">
-                                    <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
-                                    <span class="nk-menu-text">Patients</span>
-                                </a>
-                                <ul class="nk-menu-sub">
-                                    <li class="nk-menu-item">
-                                        <a href="subscriber/add-patient.html" class="nk-menu-link"><span class="nk-menu-text">Add Patient</span></a>
-                                    </li>
-                                    <li class="nk-menu-item">
-                                        <a href="subscriber/manage-patient.html" class="nk-menu-link"><span class="nk-menu-text">Manage Patient</span></a>
-                                    </li>
-                                </ul><!-- .nk-menu-sub -->
-                            </li><!-- .nk-menu-item -->
+                            
                             <li class="nk-menu-item has-sub">
                                 <a href="#" class="nk-menu-link nk-menu-toggle">
                                     <span class="nk-menu-icon"><em class="icon ni ni-capsule-fill"></em></span>
-                                    <span class="nk-menu-text">Parmacy</span>
+                                    <span class="nk-menu-text">Medicine</span>
                                 </a>
                                 <ul class="nk-menu-sub">
                                     <li class="nk-menu-item">
@@ -62,6 +119,166 @@
                                     </li>
                                 </ul><!-- .nk-menu-sub -->
                             </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-home-fill"></em></span>
+                                    <span class="nk-menu-text">Manufacturer</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/manufacturer.html" class="nk-menu-link"><span class="nk-menu-text">Manufacturer List</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/manufacturer-ledger.html" class="nk-menu-link"><span class="nk-menu-text">Manufacturer Ledger</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-repeat"></em></span>
+                                    <span class="nk-menu-text">Return</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <!-- <li class="nk-menu-item">
+                                        <a href="html/pharmacy/add-wastage-return.html" class="nk-menu-link"><span class="nk-menu-text">Add Wastage Return</span></a>
+                                    </li> -->
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/wastage-return.html" class="nk-menu-link"><span class="nk-menu-text">Wastage Return List</span></a>
+                                    </li>
+                                    <!-- <li class="nk-menu-item">
+                                        <a href="html/pharmacy/add-manufacturer-return.html" class="nk-menu-link"><span class="nk-menu-text">Add Manufacture Return</span></a>
+                                    </li> -->
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/manufacturer-return.html" class="nk-menu-link"><span class="nk-menu-text">Manufacturer Return List</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-activity-round-fill"></em></span>
+                                    <span class="nk-menu-text">Report</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/sales-report.html" class="nk-menu-link"><span class="nk-menu-text">Sales Report</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/purchase-report.html" class="nk-menu-link"><span class="nk-menu-text">Purchase Report</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/pharmacy/stock-report.html" class="nk-menu-link"><span class="nk-menu-text">Stock Report</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                        </ul><!-- .nk-menu -->
+                    </div>
+                    <div class="nk-menu-content menu-active" data-content="navHospital">
+                        <h5 class="title">Hospital Manegment</h5>
+                        <ul class="nk-menu">
+                            <li class="nk-menu-item">
+                                <a href="subscriber/subscriber-dashbaord.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span>
+                                    <span class="nk-menu-text">Dashboard</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item">
+                                <a href="#" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-note-add-fill"></em></span>
+                                    <span class="nk-menu-text">Manage Hospitals</span>
+                                </a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="#" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-note-add-fill"></em></span>
+                                    <span class="nk-menu-text">Appointment List</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                    <span class="nk-menu-text">Patient</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/add-patient.html" class="nk-menu-link"><span class="nk-menu-text">Add Patients</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/manage-patient.html" class="nk-menu-link"><span class="nk-menu-text">Manage Patients</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/patient-profile.html" class="nk-menu-link"><span class="nk-menu-text">Patient Profile</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-plus-medi-fill"></em></span>
+                                    <span class="nk-menu-text">Doctors / Nurses</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <!-- <li class="nk-menu-item">
+                                        <a href="html/hospital/doctor-nurse-add.html" class="nk-menu-link"><span class="nk-menu-text">Add Doctor / Nurses</span></a>
+                                    </li> -->
+                                    <li class="nk-menu-item">
+                                        <a href="html/hospital/doctor-nurse-list.html" class="nk-menu-link"><span class="nk-menu-text">Doctors / Nurses</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-activity-round-fill"></em></span>
+                                    <span class="nk-menu-text">Monitor Hospital</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="html/hospital/birth-report.html" class="nk-menu-link"><span class="nk-menu-text">Birth Report</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/hospital/blood-bank.html" class="nk-menu-link"><span class="nk-menu-text">Blood Bank</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="html/hospital/inventory-items.html" class="nk-menu-link"><span class="nk-menu-text">Inventory Items Reports</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                           
+                        </ul><!-- .nk-menu -->
+                    </div>
+                    
+                    <div class="nk-menu-content" data-content="navApps">
+                        <h5 class="title">Apps</h5>
+                        <ul class="nk-menu">
+                            <li class="nk-menu-item">
+                                <a href="#" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-inbox-fill"></em></span>
+                                    <span class="nk-menu-text">Mailbox</span>
+                                </a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="subscriber/subscriber-dashbaord.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-chat-fill"></em></span>
+                                    <span class="nk-menu-text">Messages</span>
+                                </a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="subscriber/subscriber-dashbaord.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-folder-fill"></em></span>
+                                    <span class="nk-menu-text">File Manager</span>
+                                </a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="subscriber/subscriber-dashbaord.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-chat-circle-fill"></em></span>
+                                    <span class="nk-menu-text">Chats</span>
+                                </a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="subscriber/subscriber-dashbaord.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-calender-date-fill"></em></span>
+                                    <span class="nk-menu-text">Calendar</span>
+                                </a>
+                            </li>
                         </ul><!-- .nk-menu -->
                     </div>
                 </div>
@@ -79,7 +296,7 @@
                                 <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
                             </div>
                             <div class="nk-header-brand d-xl-none">
-                                <a href="super-admin-dashboard.html" class="logo-link">
+                                <a href="subscriber/subscriber-dashbaord.html" class="logo-link">
                                     <img class="logo-light logo-img" src="./assets/images/favicon.png" srcset="./assets/images/favicon.png 2x" alt="logo">
                                     <img class="logo-dark logo-img" src="./assets/images/favicon.png" srcset="./assets/images/favicon.png 2x" alt="logo-dark">
                                 </a>
@@ -90,6 +307,140 @@
                             </div><!-- .nk-header-news -->
                             <div class="nk-header-tools">
                                 <ul class="nk-quick-nav">
+                                    <li class="dropdown chats-dropdown hide-mb-xs">
+                                        <a href="#" class="dropdown-toggle nk-quick-nav-icon" data-bs-toggle="dropdown">
+                                            <div class="icon-status icon-status-na"><em class="icon ni ni-comments"></em></div>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-xl dropdown-menu-end">
+                                            <div class="dropdown-head">
+                                                <span class="sub-title nk-dropdown-title">Recent Chats</span>
+                                                <a href="#">Setting</a>
+                                            </div>
+                                            <div class="dropdown-body">
+                                                <ul class="chat-list">
+                                                    <li class="chat-item">
+                                                        <a class="chat-link" href="#">
+                                                            <div class="chat-media user-avatar">
+                                                                <span>IH</span>
+                                                                <span class="status dot dot-lg dot-gray"></span>
+                                                            </div>
+                                                            <div class="chat-info">
+                                                                <div class="chat-from">
+                                                                    <div class="name">Iliash Hossain</div>
+                                                                    <span class="time">Now</span>
+                                                                </div>
+                                                                <div class="chat-context">
+                                                                    <div class="text">You: Please confrim if you got my last messages.</div>
+                                                                    <div class="status delivered">
+                                                                        <em class="icon ni ni-check-circle-fill"></em>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li><!-- .chat-item -->
+                                                    <li class="chat-item is-unread">
+                                                        <a class="chat-link" href="#">
+                                                            <div class="chat-media user-avatar bg-pink">
+                                                                <span>KS</span>
+                                                                <span class="status dot dot-lg dot-success"></span>
+                                                            </div>
+                                                            <div class="chat-info">
+                                                                <div class="chat-from">
+                                                                    <div class="name">Kabiru Sani</div>
+                                                                    <span class="time">4:49 AM</span>
+                                                                </div>
+                                                                <div class="chat-context">
+                                                                    <div class="text">Hi, I am Ishtiyak, can you help me with this problem ?</div>
+                                                                    <div class="status unread">
+                                                                        <em class="icon ni ni-bullet-fill"></em>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li><!-- .chat-item -->
+                                                    <li class="chat-item">
+                                                        <a class="chat-link" href="#">
+                                                            <div class="chat-media user-avatar">
+                                                                <img src="./images/avatar/b-sm.jpg" alt="">
+                                                            </div>
+                                                            <div class="chat-info">
+                                                                <div class="chat-from">
+                                                                    <div class="name">George Philips</div>
+                                                                    <span class="time">6 Apr</span>
+                                                                </div>
+                                                                <div class="chat-context">
+                                                                    <div class="text">Have you seens the claim from Rose?</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li><!-- .chat-item -->
+                                                    <li class="chat-item">
+                                                        <a class="chat-link" href="#">
+                                                            <div class="chat-media user-avatar user-avatar-multiple">
+                                                                <div class="user-avatar">
+                                                                    <img src="./images/avatar/c-sm.jpg" alt="">
+                                                                </div>
+                                                                <div class="user-avatar">
+                                                                    <span>AB</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="chat-info">
+                                                                <div class="chat-from">
+                                                                    <div class="name">Softnio Group</div>
+                                                                    <span class="time">27 Mar</span>
+                                                                </div>
+                                                                <div class="chat-context">
+                                                                    <div class="text">You: I just bought a new computer but i am having some problem</div>
+                                                                    <div class="status sent">
+                                                                        <em class="icon ni ni-check-circle"></em>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li><!-- .chat-item -->
+                                                    <li class="chat-item">
+                                                        <a class="chat-link" href="#">
+                                                            <div class="chat-media user-avatar">
+                                                                <img src="./images/avatar/a-sm.jpg" alt="">
+                                                                <span class="status dot dot-lg dot-success"></span>
+                                                            </div>
+                                                            <div class="chat-info">
+                                                                <div class="chat-from">
+                                                                    <div class="name">Larry Hughes</div>
+                                                                    <span class="time">3 Apr</span>
+                                                                </div>
+                                                                <div class="chat-context">
+                                                                    <div class="text">Hi Frank! How is you doing?</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li><!-- .chat-item -->
+                                                    <li class="chat-item">
+                                                        <a class="chat-link" href="#">
+                                                            <div class="chat-media user-avatar bg-purple">
+                                                                <span>TW</span>
+                                                            </div>
+                                                            <div class="chat-info">
+                                                                <div class="chat-from">
+                                                                    <div class="name">Tammy Wilson</div>
+                                                                    <span class="time">27 Mar</span>
+                                                                </div>
+                                                                <div class="chat-context">
+                                                                    <div class="text">You: I just bought a new computer but i am having some problem</div>
+                                                                    <div class="status sent">
+                                                                        <em class="icon ni ni-check-circle"></em>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li><!-- .chat-item -->
+                                                </ul><!-- .chat-list -->
+                                            </div><!-- .nk-dropdown-body -->
+                                            <div class="dropdown-foot center">
+                                                <a href="#">View All</a>
+                                            </div>
+                                        </div>
+                                    </li>
                                     <li class="dropdown notification-dropdown">
                                         <a href="#" class="dropdown-toggle nk-quick-nav-icon" data-bs-toggle="dropdown">
                                             <div class="icon-status icon-status-info"><em class="icon ni ni-bell"></em></div>
@@ -101,7 +452,51 @@
                                             </div>
                                             <div class="dropdown-body">
                                                 <div class="nk-notification">
-                                                    
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">You have requested to <span>Widthdrawl</span></div>
+                                                            <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
+                                                            <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">You have requested to <span>Widthdrawl</span></div>
+                                                            <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
+                                                            <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">You have requested to <span>Widthdrawl</span></div>
+                                                            <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div>
                                                     <div class="nk-notification-item dropdown-inner">
                                                         <div class="nk-notification-icon">
                                                             <em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
@@ -256,7 +651,7 @@
                                                         </div>
                                                         <div class="data">
                                                             <div class="data-group">
-                                                                <div class="amount">$20,847</div>
+                                                                <div class="amount">N20,008,470</div>
                                                                 <div class="nk-ecwg6-ck">
                                                                     <canvas class="ecommerce-line-chart-s3" id="labIncome"></canvas>
                                                                 </div>
@@ -278,7 +673,7 @@
                                                         </div>
                                                         <div class="data">
                                                             <div class="data-group">
-                                                                <div class="amount">$23,485</div>
+                                                                <div class="amount">N230,485.00</div>
                                                                 <div class="nk-ecwg6-ck">
                                                                     <canvas class="ecommerce-line-chart-s3" id="todayExpense"></canvas>
                                                                 </div>
@@ -296,11 +691,14 @@
                     </div>
                 </div>
                 <!-- content @e -->
+                <!-- content @e -->
             </div>
             <!-- wrap @e -->
         </div>
         <!-- main @e -->
     </div>
+    
+    
     <!-- app-root @e -->
     <!-- select region modal -->
     
