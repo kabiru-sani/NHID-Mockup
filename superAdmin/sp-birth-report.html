@@ -143,7 +143,7 @@
                         </ul><!-- .nk-menu -->
                     </div>
                     <div class="nk-menu-content menu-active" data-content="navHospital">
-                        <h5 class="title">Hospital Manegment</h5>
+                        <h5 class="title">Hospital Management</h5>
                         <ul class="nk-menu">
                             <li class="nk-menu-item">
                                 <a href="superAdmin/super-admin-dashboard.html" class="nk-menu-link">
@@ -169,7 +169,7 @@
                                     <span class="nk-menu-icon"><em class="icon ni ni-plus-medi-fill"></em></span>
                                     <span class="nk-menu-text">Doctors / Nurses</span>
                                 </a>
-                            </li>
+                            </li><!-- .nk-menu-item -->
                             
                             <li class="nk-menu-item has-sub">
                                 <a href="#" class="nk-menu-link nk-menu-toggle">
@@ -189,7 +189,7 @@
                                     <li class="nk-menu-item">
                                         <a href="superAdmin/sp-inventory-report.html" class="nk-menu-link"><span class="nk-menu-text">Inventory Items Reports</span></a>
                                     </li>
-                                </ul>
+                                </ul><!-- .nk-menu-sub -->
                             </li><!-- .nk-menu-item -->
                            
                         </ul><!-- .nk-menu -->
@@ -217,7 +217,7 @@
                             </li><!-- .nk-menu-item -->
                         </ul>
                     </div>
-                    
+                   
                 </div>
             </div>
         </div>
@@ -500,9 +500,8 @@
                                 <div class="nk-block-head nk-block-head-sm">
                                     <div class="nk-block-between g-3">
                                         <div class="nk-block-head-content">
-                                            <h3 class="nk-block-title page-title">All Hospitals Module</h3>
+                                            <h3 class="nk-block-title page-title">Hospital Birth Report</h3>
                                         </div>
-                                        
                                     </div>
                                 </div><!-- .nk-block-head -->
                                 <div class="nk-block">
@@ -547,7 +546,7 @@
                                                                                     </a>
                                                                                     <div class="filter-wg dropdown-menu dropdown-menu-xl dropdown-menu-end">
                                                                                         <div class="dropdown-head">
-                                                                                            <span class="sub-title dropdown-title">Filter Search</span>
+                                                                                            <span class="sub-title dropdown-title">Filter Report</span>
                                                                                             <div class="dropdown">
                                                                                                 <a href="#" class="btn btn-sm btn-icon">
                                                                                                     <em class="icon ni ni-more-h"></em>
@@ -558,72 +557,27 @@
                                                                                             <div class="row gx-6 gy-3">
                                                                                                 <div class="col-6">
                                                                                                     <div class="form-group">
-                                                                                                        <label class="overline-title overline-title-alt">Hospital Name</label>
+                                                                                                        <label class="overline-title overline-title-alt">Gender</label>
                                                                                                         <select class="form-select js-select2">
                                                                                                             <option value="any">Select</option>
-                                                                                                            <option value="h1">Hospital One</option>
-                                                                                                            <option value="h1">Hospital Two</option>
-                                                                                                            <option value="h1">Hospital Three</option>
-                                                                                                            <option value="h1">Hospital Four</option>
+                                                                                                            <option value="male">Male</option>
+                                                                                                            <option value="female">Female</option>
                                                                                                         </select>
                                                                                                     </div>
                                                                                                 </div>
                                                                                                 <div class="col-6">
                                                                                                     <div class="form-group">
-                                                                                                        <label class="overline-title overline-title-alt">Hospital Type</label>
+                                                                                                        <label class="overline-title overline-title-alt">Type</label>
                                                                                                         <select class="form-select js-select2">
                                                                                                             <option value="any">Select</option>
-                                                                                                            <option value="normal">Federal/Tertiary hospital</option>
-                                                                                                            <option value="cesarean">State/Secondary</option>
-                                                                                                            <option value="cesarean">Local Government/Primary</option>
-                                                                                                            <option value="cesarean">Private Hospitals</option>
+                                                                                                            <option value="normal">Normal</option>
+                                                                                                            <option value="cesarean">Cesarean Section</option>
                                                                                                         </select>
                                                                                                     </div>
                                                                                                 </div>
-
-                                                                                                <div class="col-6">
-                                                                                                    <div class="form-group">
-                                                                                                        <label class="overline-title overline-title-alt">By State</label>
-                                                                                                        <select class="form-select js-select2">
-                                                                                                            <option value="any">Select</option>
-                                                                                                            <option value="h1">State One</option>
-                                                                                                            <option value="h1">State Two</option>
-                                                                                                            <option value="h1">State Three</option>
-                                                                                                            <option value="h1">State Four</option>
-                                                                                                        </select>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div class="col-6">
-                                                                                                    <div class="form-group">
-                                                                                                        <label class="overline-title overline-title-alt">By LGA</label>
-                                                                                                        <select class="form-select js-select2">
-                                                                                                            <option value="any">Select</option>
-                                                                                                            <option value="normal">LGA 1</option>
-                                                                                                            <option value="cesarean">LGA 2</option>
-                                                                                                            <option value="cesarean">LGA 3</option>
-                                                                                                            <option value="cesarean">LGA 4</option>
-                                                                                                        </select>
-                                                                                                    </div>
-                                                                                                </div>
-
                                                                                                 <div class="col-12">
                                                                                                     <div class="form-group">
-                                                                                                        <label class="overline-title overline-title-alt">By Geopolitical Zone</label>
-                                                                                                        <select class="form-select js-select2">
-                                                                                                            <option value="any">Select</option>
-                                                                                                            <option value="normal">North West</option>
-                                                                                                            <option value="cesarean">North East</option>
-                                                                                                            <option value="cesarean">South West</option>
-                                                                                                            <option value="cesarean">South East</option>
-                                                                                                            <option value="cesarean">South South</option>
-                                                                                                            <option value="cesarean">North Central</option>
-                                                                                                        </select>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                
-                                                                                                <div class="col-12">
-                                                                                                    <div class="form-group">
-                                                                                                        <label class="overline-title overline-title-alt">Date of registration</label>
+                                                                                                        <label class="overline-title overline-title-alt">Date</label>
                                                                                                         <div class="form-control-wrap">
                                                                                                             <div class="form-icon form-icon-right">
                                                                                                                 <em class="icon ni ni-calendar"></em>
@@ -692,12 +646,12 @@
                                                                 <label class="custom-control-label" for="uid"></label>
                                                             </div>
                                                         </div>
-                                                        <div class="nk-tb-col"><span>Hospital Name</span></div>
-                                                        <div class="nk-tb-col tb-col-mb"><span class="sub-text">Accreditation No.</span></div>
-                                                        <div class="nk-tb-col tb-col-md"><span class="sub-text">Hospital Type</span></div>
-                                                        <div class="nk-tb-col tb-col-lg"><span class="sub-text">Location</span></div>
-                                                        <div class="nk-tb-col"><span>Date Accredited</span></div>
-                                                        <div class="nk-tb-col tb-col-md"><span class="sub-text">Status</span></div>
+                                                        <div class="nk-tb-col"><span>Child Name</span></div>
+                                                        <div class="nk-tb-col tb-col-mb"><span class="sub-text">Gender</span></div>
+                                                        <div class="nk-tb-col tb-col-md"><span class="sub-text">Mother Name</span></div>
+                                                        <div class="nk-tb-col tb-col-lg"><span class="sub-text">Father Name</span></div>
+                                                        <div class="nk-tb-col"><span>Date</span></div>
+                                                        <div class="nk-tb-col tb-col-md"><span class="sub-text">Report</span></div>
                                                     </div><!-- .nk-tb-item -->
                                                     <div class="nk-tb-item">
                                                         <div class="nk-tb-col nk-tb-col-check">
@@ -709,225 +663,324 @@
                                                         <div class="nk-tb-col">
                                                             <div class="user-card">
                                                                 <div class="user-avatar sm bg-primary-dim">
-                                                                    <span>MH</span>
+                                                                    <span>J</span>
                                                                 </div>
                                                                 <div class="user-info">
-                                                                    <span class="tb-lead">Manesk Hospital</span>
+                                                                    <span class="tb-lead">John Marshall</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-mb">
-                                                            <span>NHIS/2024/0001</span>
+                                                            <span>Male</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Private Hospital</span>
+                                                            <span>Dabby Marshall</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-lg">
-                                                            <span>Kaduna</span>
+                                                            <span>Jack Marshall</span>
                                                         </div>
                                                         <div class="nk-tb-col">
                                                             <span class="tb-date">18/12/2020 04:21 PM</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Active</span>
+                                                            <span>Normal Delivery.</span>
                                                         </div>
                                                     </div><!-- .nk-tb-item -->
                                                     <div class="nk-tb-item">
                                                         <div class="nk-tb-col nk-tb-col-check">
                                                             <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                                <input type="checkbox" class="custom-control-input" id="uid1">
-                                                                <label class="custom-control-label" for="uid1"></label>
+                                                                <input type="checkbox" class="custom-control-input" id="uid2">
+                                                                <label class="custom-control-label" for="uid2"></label>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col">
                                                             <div class="user-card">
-                                                                <div class="user-avatar sm bg-primary-dim">
-                                                                    <span>DH</span>
+                                                                <div class="user-avatar sm bg-danger-dim">
+                                                                    <span>A</span>
                                                                 </div>
                                                                 <div class="user-info">
-                                                                    <span class="tb-lead">Dansoho Hospital</span>
+                                                                    <span class="tb-lead">Ashley Lawson</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-mb">
-                                                            <span>NHIS/2024/0021</span>
+                                                            <span>Male</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>State Hospital</span>
+                                                            <span>Jacky Lawson</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-lg">
-                                                            <span>Kaduna</span>
+                                                            <span>Clacrk Lawson</span>
                                                         </div>
                                                         <div class="nk-tb-col">
-                                                            <span class="tb-date">18/12/2020 04:21 PM</span>
+                                                            <span class="tb-date">19/12/2020 02:55 PM</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Active</span>
+                                                            <span>Normal Delivery.</span>
                                                         </div>
                                                     </div><!-- .nk-tb-item -->
                                                     <div class="nk-tb-item">
                                                         <div class="nk-tb-col nk-tb-col-check">
                                                             <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                                <input type="checkbox" class="custom-control-input" id="uid1">
-                                                                <label class="custom-control-label" for="uid1"></label>
+                                                                <input type="checkbox" class="custom-control-input" id="uid3">
+                                                                <label class="custom-control-label" for="uid3"></label>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col">
                                                             <div class="user-card">
-                                                                <div class="user-avatar sm bg-primary-dim">
-                                                                    <span>GH</span>
+                                                                <div class="user-avatar sm bg-danger-dim">
+                                                                    <span>K</span>
                                                                 </div>
                                                                 <div class="user-info">
-                                                                    <span class="tb-lead">Giwa Hospital</span>
+                                                                    <span class="tb-lead">Kristen Hawkins</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-mb">
-                                                            <span>NHIS/2024/0003</span>
+                                                            <span>Male</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Federal Hospital</span>
+                                                            <span>Jacky Hawkins</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-lg">
-                                                            <span>Ibadan</span>
+                                                            <span>John Lawson</span>
                                                         </div>
                                                         <div class="nk-tb-col">
-                                                            <span class="tb-date">18/12/2020 04:21 PM</span>
+                                                            <span class="tb-date">20/12/2020 03:01 AM</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Active</span>
+                                                            <span>Normal Delivery.</span>
                                                         </div>
                                                     </div><!-- .nk-tb-item -->
                                                     <div class="nk-tb-item">
                                                         <div class="nk-tb-col nk-tb-col-check">
                                                             <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                                <input type="checkbox" class="custom-control-input" id="uid1">
-                                                                <label class="custom-control-label" for="uid1"></label>
+                                                                <input type="checkbox" class="custom-control-input" id="uid4">
+                                                                <label class="custom-control-label" for="uid4"></label>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col">
                                                             <div class="user-card">
-                                                                <div class="user-avatar sm bg-primary-dim">
-                                                                    <span>OH</span>
+                                                                <div class="user-avatar sm bg-purple-dim">
+                                                                    <span>T</span>
                                                                 </div>
                                                                 <div class="user-info">
-                                                                    <span class="tb-lead">Oxford Hospital</span>
+                                                                    <span class="tb-lead">Tommy Vasquez</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-mb">
-                                                            <span>NHIS/2024/0004</span>
+                                                            <span>Male</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Private Hospital</span>
+                                                            <span>Dabby Vasquez</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-lg">
-                                                            <span>Abuja</span>
+                                                            <span>Nolan Vasquez</span>
                                                         </div>
                                                         <div class="nk-tb-col">
-                                                            <span class="tb-date">18/12/2020 04:21 PM</span>
+                                                            <span class="tb-date">22/12/2020 04:10 AM</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Active</span>
+                                                            <span>Cesarean Section.</span>
                                                         </div>
                                                     </div><!-- .nk-tb-item -->
                                                     <div class="nk-tb-item">
                                                         <div class="nk-tb-col nk-tb-col-check">
                                                             <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                                <input type="checkbox" class="custom-control-input" id="uid1">
-                                                                <label class="custom-control-label" for="uid1"></label>
+                                                                <input type="checkbox" class="custom-control-input" id="uid5">
+                                                                <label class="custom-control-label" for="uid5"></label>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col">
                                                             <div class="user-card">
-                                                                <div class="user-avatar sm bg-primary-dim">
-                                                                    <span>DH</span>
+                                                                <div class="user-avatar sm bg-teal-dim">
+                                                                    <span>A</span>
                                                                 </div>
                                                                 <div class="user-info">
-                                                                    <span class="tb-lead">Dikko Hospital</span>
+                                                                    <span class="tb-lead">Alejandro Haynes</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-mb">
-                                                            <span>NHIS/2024/0301</span>
+                                                            <span>Female</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Federal Hospital</span>
+                                                            <span>Dobrah Haynes</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-lg">
-                                                            <span>Warri</span>
+                                                            <span>Zack Vasquez</span>
                                                         </div>
                                                         <div class="nk-tb-col">
-                                                            <span class="tb-date">18/12/2020 04:21 PM</span>
+                                                            <span class="tb-date">23/12/2020 04:10 PM</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Active</span>
+                                                            <span>Normal Delivery.</span>
                                                         </div>
                                                     </div><!-- .nk-tb-item -->
                                                     <div class="nk-tb-item">
                                                         <div class="nk-tb-col nk-tb-col-check">
                                                             <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                                <input type="checkbox" class="custom-control-input" id="uid1">
-                                                                <label class="custom-control-label" for="uid1"></label>
+                                                                <input type="checkbox" class="custom-control-input" id="uid6">
+                                                                <label class="custom-control-label" for="uid6"></label>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col">
                                                             <div class="user-card">
-                                                                <div class="user-avatar sm bg-primary-dim">
-                                                                    <span>ABU</span>
+                                                                <div class="user-avatar sm bg-warning-dim">
+                                                                    <span>B</span>
                                                                 </div>
                                                                 <div class="user-info">
-                                                                    <span class="tb-lead">ABU Teaching Hospital</span>
+                                                                    <span class="tb-lead">Brooke Harmon</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-mb">
-                                                            <span>NHIS/2024/0021</span>
+                                                            <span>Female</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Federal Hospital</span>
+                                                            <span>Marry Harmon</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-lg">
-                                                            <span>Kaduna</span>
+                                                            <span>Nolan Harmon</span>
                                                         </div>
                                                         <div class="nk-tb-col">
-                                                            <span class="tb-date">18/12/2020 04:21 PM</span>
+                                                            <span class="tb-date">24/12/2020 06:25 PM</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Active</span>
+                                                            <span>Normal Delivery.</span>
                                                         </div>
                                                     </div><!-- .nk-tb-item -->
                                                     <div class="nk-tb-item">
                                                         <div class="nk-tb-col nk-tb-col-check">
                                                             <div class="custom-control custom-control-sm custom-checkbox notext">
-                                                                <input type="checkbox" class="custom-control-input" id="uid1">
-                                                                <label class="custom-control-label" for="uid1"></label>
+                                                                <input type="checkbox" class="custom-control-input" id="uid7">
+                                                                <label class="custom-control-label" for="uid7"></label>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col">
                                                             <div class="user-card">
-                                                                <div class="user-avatar sm bg-primary-dim">
-                                                                    <span>UH</span>
+                                                                <div class="user-avatar sm bg-gray-dim">
+                                                                    <span>T</span>
                                                                 </div>
                                                                 <div class="user-info">
-                                                                    <span class="tb-lead">Unicef Hospital</span>
+                                                                    <span class="tb-lead">Trevor Miller</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-mb">
-                                                            <span>NHIS/2024/0031</span>
+                                                            <span>Male</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Local Government Hospital</span>
+                                                            <span>Jarry Harmon</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-lg">
-                                                            <span>Kaduna</span>
+                                                            <span>Dabid Harmon</span>
                                                         </div>
                                                         <div class="nk-tb-col">
-                                                            <span class="tb-date">18/12/2020 04:21 PM</span>
+                                                            <span class="tb-date">25/12/2020 07:40 PM</span>
                                                         </div>
                                                         <div class="nk-tb-col tb-col-md">
-                                                            <span>Active</span>
+                                                            <span>Normal Delivery.</span>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid8">
+                                                                <label class="custom-control-label" for="uid8"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <div class="user-card">
+                                                                <div class="user-avatar sm bg-teal-dim">
+                                                                    <span>LF</span>
+                                                                </div>
+                                                                <div class="user-info">
+                                                                    <span class="tb-lead">Lonnie Ferguson</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-mb">
+                                                            <span>Female</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span>Jacky Ferguson</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span>Jhon Ferguson</span>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="tb-date">25/12/2020 08:00 PM</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span>Cesarean Section.</span>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid9">
+                                                                <label class="custom-control-label" for="uid9"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <div class="user-card">
+                                                                <div class="user-avatar sm bg-danger-dim">
+                                                                    <span>M</span>
+                                                                </div>
+                                                                <div class="user-info">
+                                                                    <span class="tb-lead">Mack Kennedy</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-mb">
+                                                            <span>Male</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span>Jarry Kennedy</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span>Zack Kennedy</span>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="tb-date">26/12/2020 07:21 PM</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span>Cesarean Section.</span>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid10">
+                                                                <label class="custom-control-label" for="uid10"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <div class="user-card">
+                                                                <div class="user-avatar sm bg-warning-dim">
+                                                                    <span>I</span>
+                                                                </div>
+                                                                <div class="user-info">
+                                                                    <span class="tb-lead">Inez Wilkerson</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-mb">
+                                                            <span>Male</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span>Margot Wilkerson</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span>Ezra Wilkerson</span>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="tb-date">26/12/2020 07:30 PM</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span>Normal Delivery.</span>
                                                         </div>
                                                     </div><!-- .nk-tb-item -->
                                                 </div>
@@ -958,109 +1011,11 @@
     </div>
     <!-- app-root @e -->
     <!-- select region modal -->
-    <div class="modal fade" tabindex="-1" role="dialog" id="addBirth">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <a href="#" class="close" data-bs-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
-                <div class="modal-body modal-body-md">
-                    <h5 class="modal-title">Add Hospital Modal</h5>
-                    <form action="#" class="mt-4">
-                        <div class="row g-gs">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="form-label" for="childName">Hospital Name</label>
-                                    <div class="form-control-wrap">
-                                        <input type="text" class="form-control" id="childName" placeholder="Child Name">
-                                    </div>
-                                </div>
-                            </div><!-- .col -->
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="form-label">Hospital Category</label>
-                                    <div class="form-control-wrap">
-                                        <select class="form-select js-select2" data-placeholder="Select Gender">
-                                            <option value="#">---Select Hospital Category---</option>
-                                                <option value="">Federal/Tertiary Hospital</option>
-                                                <option value="">State/Secondary Hospital</option>
-                                                <option value="">Local Government/Primary Hospital</option>
-                                                <option value="">Private Hospital</option>
-                                                <option value="">Others</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div><!-- .col -->
-                            
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="form-label" for="childName">Accreditation No.</label>
-                                    <div class="form-control-wrap">
-                                        <input type="text" class="form-control" id="childName" placeholder="Child Name">
-                                    </div>
-                                </div>
-                            </div><!--col-->
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="form-label">Hospital Logo</label>
-                                    <div class="form-control-wrap">
-                                        <div class="form-file">
-                                            <input type="file" multiple class="form-file-input" id="customFile">
-                                            <label class="form-file-label" for="customFile">Choose file</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!--col-->
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="form-label" for="motherName">State</label>
-                                    <div class="form-control-wrap">
-                                        <input type="text" class="form-control" id="motherName" placeholder="Mother Name">
-                                    </div>
-                                </div>
-                            </div><!-- .col -->
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="form-label" for="patientId">LGA</label>
-                                    <div class="form-control-wrap">
-                                        <input type="text" class="form-control" id="patientId" placeholder="#P6985">
-                                    </div>
-                                </div>
-                            </div><!-- .col -->
-                            
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label class="form-label">Hospital Address</label>
-                                    <div class="form-control-wrap">
-                                        <div class="quill-basic">
-                                            <p>Hello World!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!--col-->
-                            <div class="col-12">
-                                <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
-                                    <li>
-                                        <a href="#" data-bs-dismiss="modal" class="btn btn-primary">Add Hospital</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="link link-light" data-bs-dismiss="modal">Cancel</a>
-                                    </li>
-                                </ul>
-                            </div><!-- .col -->
-                        </div>
-                    </form>
-                </div><!-- .modal-body -->
-            </div><!-- .modal-content -->
-        </div><!-- .modal-dialog -->
-    </div><!-- .modal -->
     
     <!-- JavaScript -->
     <script src="./assets/js/bundle.js?ver=3.1.3"></script>
     <script src="./assets/js/scripts.js?ver=3.1.3"></script>
     <script src="./assets/js/charts/gd-hospital.js?ver=3.1.3"></script>
-
-    <link rel="stylesheet" href="./assets/css/editors/quill.css?ver=3.1.3">
-    <script src="./assets/js/libs/editors/quill.js?ver=3.1.3"></script>
-    <script src="./assets/js/editors.js?ver=3.1.3"></script>
 </body>
 
 </html>
