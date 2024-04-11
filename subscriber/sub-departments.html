@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+    <!-- <base href="../../"> -->
+    <base href="../">
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+    <!-- Page Title  -->
+    <title> Super Admin | Dashboard </title>
+    <!-- StyleSheets  -->
+    <link rel="stylesheet" href="./assets/css/dashlite.css?ver=3.1.3">
+    <link id="skin-default" rel="stylesheet" href="./assets/css/theme.css?ver=3.1.3">
+    <!-- webcam -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.min.js"></script>
+</head>
+
+<body class="nk-body ui-rounder npc-default has-sidebar ">
+    <div class="nk-app-root">
+        <div class="nk-sidebar" data-content="sidebarMenu">
+            <div class="nk-sidebar-bar">
+                <div class="nk-apps-brand">
+                    <a href="subscriber/subscriber-dashbaord.html" class="logo-link">
+                        <img class="logo-light logo-img" src="./assets/images/favicon.png" srcset="./assets/images/favicon.png 2x" alt="logo">
+                        <img class="logo-dark logo-img" src="./assets/images/favicon.png" srcset="./assets/images/favicon.png 2x" alt="logo-dark">
+                    </a>
+                </div>
+                <div class="nk-sidebar-element">
+                    <div class="nk-sidebar-body">
+                        <div class="nk-sidebar-content" data-simplebar>
+                            <div class="nk-sidebar-menu">
+                                <!-- Menu -->
+                                <ul class="nk-menu apps-menu">
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navPharmacy">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-capsule"></em></span>
+                                        </a>
+                                    </li>
+                                    <li class="nk-menu-item active">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navHospital">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-plus-medi"></em></span>
+                                        </a>
+                                    </li>
+                                    <!-- <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navDashboards">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-dashboard"></em></span>
+                                        </a>
+                                    </li> -->
+                                    
+                                    <!-- <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navPages">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-files"></em></span>
+                                        </a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navMisc">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-server"></em></span>
+                                        </a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navError">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-alert-c"></em></span>
+                                        </a>
+                                    </li>
+                                    <li class="nk-menu-hr"></li>
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navComponents">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-layers"></em></span>
+                                        </a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <!-- <div class="nk-sidebar-footer">
+                                <ul class="nk-menu nk-menu-md apps-menu">
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link" title="Settings">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-setting"></em></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-sidebar-main is-light">
+                <div class="nk-sidebar-inner" data-simplebar>
+                    <div class="nk-menu-content" data-content="navPharmacy">
+                        <h5 class="title">Pharmacy</h5>
+                        <ul class="nk-menu">
+                            <li class="nk-menu-item">
+                                <a href="subscriber/pharmacy-dash.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span>
+                                    <span class="nk-menu-text">Dashboard</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-capsule-fill"></em></span>
+                                    <span class="nk-menu-text">Medicine</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/add-medcine.html" class="nk-menu-link"><span class="nk-menu-text">Add Medicine</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/manage-medcine.html" class="nk-menu-link"><span class="nk-menu-text">Medicine List</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-home-fill"></em></span>
+                                    <span class="nk-menu-text">Manufacturer</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-manufacturer-list.html" class="nk-menu-link"><span class="nk-menu-text">Manufacturer List</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-manufacturer-ledger.html" class="nk-menu-link"><span class="nk-menu-text">Manufacturer Ledger</span></a>
+                                    </li>
+                                </ul>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-repeat"></em></span>
+                                    <span class="nk-menu-text">Return</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-add-waste-return.html" class="nk-menu-link"><span class="nk-menu-text">Add Wastage Return</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-waste-returns.html" class="nk-menu-link"><span class="nk-menu-text">Wastage Return List</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-add-manufacturer-return.html" class="nk-menu-link"><span class="nk-menu-text">Add Manufacturer Return</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-manufacturer-returns.html" class="nk-menu-link"><span class="nk-menu-text">Manufacturer Return List</span></a>
+                                    </li>
+                                </ul>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-activity-round-fill"></em></span>
+                                    <span class="nk-menu-text">Reports</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-sales-report.html" class="nk-menu-link"><span class="nk-menu-text">Sales Report</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-purchase-report.html" class="nk-menu-link"><span class="nk-menu-text">Purchase Report</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-stock-report.html" class="nk-menu-link"><span class="nk-menu-text">Stock Report</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li>
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-coin-alt-fill"></em></span>
+                                    <span class="nk-menu-text">Finance</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-income.html" class="nk-menu-link"><span class="nk-menu-text">Income</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-expense.html" class="nk-menu-link"><span class="nk-menu-text">Expence</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-invoices.html" class="nk-menu-link"><span class="nk-menu-text">Invoice List</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul><!-- .nk-menu -->
+                    </div>
+                    <div class="nk-menu-content menu-active" data-content="navHospital">
+                        <h5 class="title">Hospital Manegment</h5>
+                        <ul class="nk-menu">
+                            <li class="nk-menu-item">
+                                <a href="subscriber/subscriber-dashbaord.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span>
+                                    <span class="nk-menu-text">Dashboard</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item">
+                                <a href="subscriber/sub-appointments.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-note-add-fill"></em></span>
+                                    <span class="nk-menu-text">Appointment List</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                    <span class="nk-menu-text">Patient</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/add-patient.html" class="nk-menu-link"><span class="nk-menu-text">Add Patients</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/manage-patient.html" class="nk-menu-link"><span class="nk-menu-text">Manage Patients</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/patient-profile.html" class="nk-menu-link"><span class="nk-menu-text">Patient Profile</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-plus-medi-fill"></em></span>
+                                    <span class="nk-menu-text">Doctors / Nurses</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-add-doctors.html" class="nk-menu-link"><span class="nk-menu-text">Add Doctor / Nurses</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-doctors.html" class="nk-menu-link"><span class="nk-menu-text">Doctors / Nurses</span></a>
+                                    </li>
+                                </ul>
+                            </li><!-- .nk-menu-item -->
+                            
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-activity-round-fill"></em></span>
+                                    <span class="nk-menu-text">Monitor Hospital</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-birth-report.html" class="nk-menu-link"><span class="nk-menu-text">Birth Report</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-blood-report.html" class="nk-menu-link"><span class="nk-menu-text">Blood Bank</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-death-report.html" class="nk-menu-link"><span class="nk-menu-text">Death Reports</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-inventory-report.html" class="nk-menu-link"><span class="nk-menu-text">Inventory Items Reports</span></a>
+                                    </li>
+                                </ul>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-plus-medi-fill"></em></span>
+                                    <span class="nk-menu-text">Hospital Beds</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-bed-group.html" class="nk-menu-link"><span class="nk-menu-text">Bed Group</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-bed-allotment.html" class="nk-menu-link"><span class="nk-menu-text">Bed Allotment</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="subscriber/sub-departments.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-plus-medi-fill"></em></span>
+                                    <span class="nk-menu-text">Hospital Departments</span>
+                                </a>
+                            </li>
+                           
+                        </ul><!-- .nk-menu -->
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!-- main @s -->
+        <div class="nk-main ">
+            <!-- wrap @s -->
+            <div class="nk-wrap ">
+                <!-- main header @s -->
+                <div class="nk-header nk-header-fixed nk-header-fluid is-light">
+                    <div class="container-fluid">
+                        <div class="nk-header-wrap">
+                            <div class="nk-menu-trigger d-xl-none ms-n1">
+                                <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
+                            </div>
+                            <div class="nk-header-brand d-xl-none">
+                                <a href="super-admin-dashboard.html" class="logo-link">
+                                    <img class="logo-light logo-img" src="./assets/images/favicon.png" srcset="./assets/images/favicon.png 2x" alt="logo">
+                                    <img class="logo-dark logo-img" src="./assets/images/favicon.png" srcset="./assets/images/favicon.png 2x" alt="logo-dark">
+                                </a>
+                            </div><!-- .nk-header-brand -->
+                            <div class="nk-header-search ms-3 ms-xl-0">
+                                <em class="icon ni ni-search"></em>
+                                <input type="text" class="form-control border-transparent form-focus-none" placeholder="Search anything">
+                            </div><!-- .nk-header-news -->
+                            <div class="nk-header-tools">
+                                <ul class="nk-quick-nav">
+                                    <li class="dropdown notification-dropdown">
+                                        <a href="#" class="dropdown-toggle nk-quick-nav-icon" data-bs-toggle="dropdown">
+                                            <div class="icon-status icon-status-info"><em class="icon ni ni-bell"></em></div>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-xl dropdown-menu-end">
+                                            <div class="dropdown-head">
+                                                <span class="sub-title nk-dropdown-title">Notifications</span>
+                                                <a href="#">Mark All as Read</a>
+                                            </div>
+                                            <div class="dropdown-body">
+                                                <div class="nk-notification">
+                                                    
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
+                                                            <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .nk-notification -->
+                                            </div><!-- .nk-dropdown-body -->
+                                            <div class="dropdown-foot center">
+                                                <a href="#">View All</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                   
+                                    <li class="dropdown user-dropdown">
+                                        <a href="#" class="dropdown-toggle me-n1" data-bs-toggle="dropdown">
+                                            <div class="user-toggle">
+                                                <div class="user-avatar sm">
+                                                    <em class="icon ni ni-user-alt"></em>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-md dropdown-menu-end">
+                                            <div class="dropdown-inner user-card-wrap bg-lighter">
+                                                <div class="user-card">
+                                                    <div class="user-avatar">
+                                                        <span>KS</span>
+                                                    </div>
+                                                    <div class="user-info">
+                                                        <span class="lead-text">Kabiru Sani</span>
+                                                        <span class="sub-text">info@kbs.com</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-inner">
+                                                <ul class="link-list">
+                                                    <li><a href="html/hospital/user-profile.html"><em class="icon ni ni-user-alt"></em><span>View Profile</span></a></li>
+                                                    <li><a href="html/hospital/settings.html"><em class="icon ni ni-setting-alt"></em><span>Account Setting</span></a></li>
+                                                    <li><a href="html/hospital/settings-account-log.html"><em class="icon ni ni-activity-alt"></em><span>Login Activity</span></a></li>
+                                                    <li><a class="dark-switch" href="#"><em class="icon ni ni-moon"></em><span>Dark Mode</span></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown-inner">
+                                                <ul class="link-list">
+                                                    <li><a href="index.html"><em class="icon ni ni-signout"></em><span>Sign out</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- .nk-header-wrap -->
+                    </div><!-- .container-fliud -->
+                </div>
+                <!-- main header @e -->
+                <div class="nk-content ">
+                    <div class="container-fluid">
+                        <div class="nk-content-inner">
+                            <div class="nk-content-body">
+                                <div class="nk-block-head nk-block-head-sm">
+                                    <div class="nk-block-between">
+                                        <div class="nk-block-head-content">
+                                            <h3 class="nk-block-title page-title">Department Lists</h3>
+                                            <div class="nk-block-des text-soft">
+                                                <p>You have total 12 departments.</p>
+                                            </div>
+                                        </div><!-- .nk-block-head-content -->
+                                        <div class="nk-block-head-content">
+                                            <a data-bs-toggle="modal" href="#addDepartment" class="btn btn-icon btn-primary d-md-none"><em class="icon ni ni-plus"></em></a>
+                                            <a data-bs-toggle="modal" href="#addDepartment" class="btn btn-primary d-none d-md-inline-flex"><em class="icon ni ni-plus"></em><span>Add Department</span></a>
+                                        </div><!-- .nk-block-head-content -->
+                                    </div><!-- .nk-block-between -->
+                                </div><!-- .nk-block-head -->
+                                <div class="nk-block">
+                                    <div class="card card-bordered card-stretch">
+                                        <div class="card-inner-group">
+                                            <div class="card-inner position-relative card-tools-toggle">
+                                                <div class="card-title-group">
+                                                    <div class="card-tools">
+                                                        <div class="form-inline flex-nowrap gx-3">
+                                                            <div class="form-wrap w-150px">
+                                                                <select class="form-select js-select2" data-search="off" data-placeholder="Bulk Action">
+                                                                    <option value="">Bulk Action</option>
+                                                                    <option value="cstatus">Change Status</option>
+                                                                    <option value="delete">Delete</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="btn-wrap">
+                                                                <span class="d-none d-md-block"><button class="btn btn-dim btn-outline-light disabled">Apply</button></span>
+                                                                <span class="d-md-none"><button class="btn btn-dim btn-outline-light btn-icon disabled"><em class="icon ni ni-arrow-right"></em></button></span>
+                                                            </div>
+                                                        </div><!-- .form-inline -->
+                                                    </div><!-- .card-tools -->
+                                                    <div class="card-tools me-n1">
+                                                        <ul class="btn-toolbar gx-1">
+                                                            <li>
+                                                                <a href="#" class="btn btn-icon search-toggle toggle-search" data-target="search"><em class="icon ni ni-search"></em></a>
+                                                            </li><!-- li -->
+                                                            <li class="btn-toolbar-sep"></li><!-- li -->
+                                                            <li>
+                                                                <div class="toggle-wrap">
+                                                                    <a href="#" class="btn btn-icon btn-trigger toggle" data-target="cardTools"><em class="icon ni ni-menu-right"></em></a>
+                                                                    <div class="toggle-content" data-content="cardTools">
+                                                                        <ul class="btn-toolbar gx-1">
+                                                                            <li class="toggle-close">
+                                                                                <a href="#" class="btn btn-icon btn-trigger toggle" data-target="cardTools"><em class="icon ni ni-arrow-left"></em></a>
+                                                                            </li><!-- li -->
+                                                                            <li>
+                                                                                <div class="dropdown">
+                                                                                    <a href="#" class="btn btn-trigger btn-icon dropdown-toggle" data-bs-toggle="dropdown">
+                                                                                        <div class="dot dot-primary"></div>
+                                                                                        <em class="icon ni ni-filter-alt"></em>
+                                                                                    </a>
+                                                                                    <div class="filter-wg dropdown-menu dropdown-menu-xl dropdown-menu-end">
+                                                                                        <div class="dropdown-head">
+                                                                                            <span class="sub-title dropdown-title">Filter Department</span>
+                                                                                            <div class="dropdown">
+                                                                                                <a href="#" class="btn btn-sm btn-icon">
+                                                                                                    <em class="icon ni ni-more-h"></em>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="dropdown-body dropdown-body-rg">
+                                                                                            <div class="row gx-6 gy-3">
+                                                                                                <div class="col-6">
+                                                                                                    <div class="form-group">
+                                                                                                        <label class="overline-title overline-title-alt">Department</label>
+                                                                                                        <select class="form-select js-select2">
+                                                                                                            <option value="any">Departments</option>
+                                                                                                            <option value="medicine">Medicine</option>
+                                                                                                            <option value="gastroenterology">Gastroenterology</option>
+                                                                                                            <option value="cardiology">Cardiology</option>
+                                                                                                            <option value="orthopaedics">Orthopaedics</option>
+                                                                                                            <option value="neurology">Neurology</option>
+                                                                                                            <option value="urology">Urology</option>
+                                                                                                        </select>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-6">
+                                                                                                    <div class="form-group">
+                                                                                                        <label class="overline-title overline-title-alt">Status</label>
+                                                                                                        <select class="form-select js-select2">
+                                                                                                            <option value="any">Any Status</option>
+                                                                                                            <option value="active">Active</option>
+                                                                                                            <option value="inactive">Inactive</option>
+                                                                                                        </select>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-12">
+                                                                                                    <div class="form-group">
+                                                                                                        <button type="button" class="btn btn-secondary">Filter</button>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="dropdown-foot between">
+                                                                                            <a class="clickable" href="#">Reset Filter</a>
+                                                                                            <a href="#">Save Filter</a>
+                                                                                        </div>
+                                                                                    </div><!-- .filter-wg -->
+                                                                                </div><!-- .dropdown -->
+                                                                            </li><!-- li -->
+                                                                            <li>
+                                                                                <div class="dropdown">
+                                                                                    <a href="#" class="btn btn-trigger btn-icon dropdown-toggle" data-bs-toggle="dropdown">
+                                                                                        <em class="icon ni ni-setting"></em>
+                                                                                    </a>
+                                                                                    <div class="dropdown-menu dropdown-menu-xs dropdown-menu-end">
+                                                                                        <ul class="link-check">
+                                                                                            <li><span>Show</span></li>
+                                                                                            <li class="active"><a href="#">10</a></li>
+                                                                                            <li><a href="#">20</a></li>
+                                                                                            <li><a href="#">50</a></li>
+                                                                                        </ul>
+                                                                                        <ul class="link-check">
+                                                                                            <li><span>Order</span></li>
+                                                                                            <li class="active"><a href="#">DESC</a></li>
+                                                                                            <li><a href="#">ASC</a></li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div><!-- .dropdown -->
+                                                                            </li><!-- li -->
+                                                                        </ul><!-- .btn-toolbar -->
+                                                                    </div><!-- .toggle-content -->
+                                                                </div><!-- .toggle-wrap -->
+                                                            </li><!-- li -->
+                                                        </ul><!-- .btn-toolbar -->
+                                                    </div><!-- .card-tools -->
+                                                </div><!-- .card-title-group -->
+                                                <div class="card-search search-wrap" data-search="search">
+                                                    <div class="card-body">
+                                                        <div class="search-content">
+                                                            <a href="#" class="search-back btn btn-icon toggle-search" data-target="search"><em class="icon ni ni-arrow-left"></em></a>
+                                                            <input type="text" class="form-control border-transparent form-focus-none" placeholder="Search by  department name">
+                                                            <button class="search-submit btn btn-icon"><em class="icon ni ni-search"></em></button>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .card-search -->
+                                            </div><!-- .card-inner -->
+                                            <div class="card-inner p-0">
+                                                <div class="nk-tb-list nk-tb-ulist">
+                                                    <div class="nk-tb-item nk-tb-head">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid">
+                                                                <label class="custom-control-label" for="uid"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col"><span class="sub-text">Icon</span></div>
+                                                        <div class="nk-tb-col"><span class="sub-text">Department</span></div>
+                                                        <div class="nk-tb-col tb-col-md"><span class="sub-text">Description</span></div>
+                                                        <div class="nk-tb-col tb-col-mb"><span class="sub-text">Status</span></div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1 my-n1">
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger me-n1" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a href="#"><em class="icon ni ni-edit"></em><span>Edit Selected</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Remove Seleted</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid1">
+                                                                <label class="custom-control-label" for="uid1"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="tb-thumb">
+                                                                <img src="./assets/images/hospital/a.png" alt="" class="thumb w-40px">
+                                                            </span>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="fw-bold">Anesthesiology</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span>Anesthesiology is the medical specialty concerned with the total perioperative care of patients before, during and after surgery.</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-mb">
+                                                            <span class="tb-status text-success">Active</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editDepartment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid2">
+                                                                <label class="custom-control-label" for="uid2"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="tb-thumb">
+                                                                <img src="./assets/images/hospital/b.png" alt="" class="thumb w-40px">
+                                                            </span>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="fw-bold">Cardiology</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span>Cardiology is a branch of medicine that deals with the disorders of the heart as well as some parts of the circulatory system.</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-mb">
+                                                            <span class="tb-status text-success">Active</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editDepartment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid3">
+                                                                <label class="custom-control-label" for="uid3"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="tb-thumb">
+                                                                <img src="./assets/images/hospital/c.png" alt="" class="thumb w-40px">
+                                                            </span>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="fw-bold">Dermatology</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span>Dermatology is the branch of medicine dealing with the skin. It is a speciality with both medical and surgical aspects.</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-mb">
+                                                            <span class="tb-status text-danger">Inactive</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editDepartment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid4">
+                                                                <label class="custom-control-label" for="uid4"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="tb-thumb">
+                                                                <img src="./assets/images/hospital/d.png" alt="" class="thumb w-40px">
+                                                            </span>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="fw-bold">Gastroenterology</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span>Gastroenterology is the branch of medicine focused on the digestive system and its disorders.</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-mb">
+                                                            <span class="tb-status text-success">Active</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editDepartment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid5">
+                                                                <label class="custom-control-label" for="uid5"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="tb-thumb">
+                                                                <img src="./assets/images/hospital/e.png" alt="" class="thumb w-40px">
+                                                            </span>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="fw-bold">Gynaecology</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span>Gynaecology or gynecology is the medical practice dealing with the health of the female reproductive system.</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-mb">
+                                                            <span class="tb-status text-success">Active</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editDepartment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid6">
+                                                                <label class="custom-control-label" for="uid6"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="tb-thumb">
+                                                                <img src="./assets/images/hospital/f.png" alt="" class="thumb w-40px">
+                                                            </span>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="fw-bold">Medicine </span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span>Internal medicine physicians, are specialists who apply to the diagnosis, treatment, and compassionate care of adults across the spectrum from health to complex illness.</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-mb">
+                                                            <span class="tb-status text-success">Active</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editDepartment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid7">
+                                                                <label class="custom-control-label" for="uid7"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="tb-thumb">
+                                                                <img src="./assets/images/hospital/g.png" alt="" class="thumb w-40px">
+                                                            </span>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="fw-bold">Neurology</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span>Neurology is a branch of medicine dealing with disorders of the nervous system.</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-mb">
+                                                            <span class="tb-status text-danger">Inactive</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editDepartment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid8">
+                                                                <label class="custom-control-label" for="uid8"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="tb-thumb">
+                                                                <img src="./assets/images/hospital/h.png" alt="" class="thumb w-40px">
+                                                            </span>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="fw-bold">Orthopedic</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span>Orthopaedic surgery or orthopaedics, is the branch of surgery concerned with conditions involving the musculoskeletal system.</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-mb">
+                                                            <span class="tb-status text-success">Active</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editDepartment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid9">
+                                                                <label class="custom-control-label" for="uid9"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="tb-thumb">
+                                                                <img src="./assets/images/hospital/i.png" alt="" class="thumb w-40px">
+                                                            </span>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="fw-bold">Otorhinolaryngology</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span>Otorhinolaryngology is a surgical subspecialty within medicine that deals with the surgical and medical management of conditions of the head and neck.</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-mb">
+                                                            <span class="tb-status text-success">Active</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editDepartment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid10">
+                                                                <label class="custom-control-label" for="uid10"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="tb-thumb">
+                                                                <img src="./assets/images/hospital/j.png" alt="" class="thumb w-40px">
+                                                            </span>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="fw-bold">Radiology</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span>Radiology is the medical discipline that uses medical imaging to diagnose and treat diseases within the bodies of animals and humans.</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-mb">
+                                                            <span class="tb-status text-success">Active</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editDepartment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid11">
+                                                                <label class="custom-control-label" for="uid11"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="tb-thumb">
+                                                                <img src="./assets/images/hospital/k.png" alt="" class="thumb w-40px">
+                                                            </span>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="fw-bold">Surgery</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span>A patient may have surgery to: Further explore the condition for the purpose of diagnosis. Take a biopsy of a suspicious lump. Remove or repair diseased tissues or organs.</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-mb">
+                                                            <span class="tb-status text-success">Active</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editDepartment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col nk-tb-col-check">
+                                                            <div class="custom-control custom-control-sm custom-checkbox notext">
+                                                                <input type="checkbox" class="custom-control-input" id="uid12">
+                                                                <label class="custom-control-label" for="uid12"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="tb-thumb">
+                                                                <img src="./assets/images/hospital/l.png" alt="" class="thumb w-40px">
+                                                            </span>
+                                                        </div>
+                                                        <div class="nk-tb-col">
+                                                            <span class="fw-bold">Urology</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-md">
+                                                            <span>Urology, also known as genitourinary surgery, is the branch of medicine that focuses on surgical and medical diseases of the male and female urinary-tract system and the male reproductive organs.</span>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-mb">
+                                                            <span class="tb-status text-success">Active</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-1">
+                                                                <li>
+                                                                    <div class="drodown">
+                                                                        <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                                            <ul class="link-list-opt no-bdr">
+                                                                                <li><a data-bs-toggle="modal" href="#editDepartment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                </div><!-- .nk-tb-list -->
+                                            </div><!-- .card-inner -->
+                                            <div class="card-inner">
+                                                <div class="nk-block-between-md g-3">
+                                                    <div class="g">
+                                                        <ul class="pagination justify-content-center justify-content-md-start">
+                                                            <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                            <li class="page-item"><span class="page-link"><em class="icon ni ni-more-h"></em></span></li>
+                                                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                                        </ul><!-- .pagination -->
+                                                    </div>
+                                                    <div class="g">
+                                                        <div class="pagination-goto d-flex justify-content-center justify-content-md-start gx-3">
+                                                            <div>Page</div>
+                                                            <div>
+                                                                <select class="form-select js-select2" data-search="on" data-dropdown="xs center">
+                                                                    <option value="page-1">1</option>
+                                                                    <option value="page-2">2</option>
+                                                                    <option value="page-4">4</option>
+                                                                    <option value="page-5">5</option>
+                                                                    <option value="page-6">6</option>
+                                                                    <option value="page-7">7</option>
+                                                                    <option value="page-8">8</option>
+                                                                    <option value="page-9">9</option>
+                                                                    <option value="page-10">10</option>
+                                                                    <option value="page-11">11</option>
+                                                                    <option value="page-12">12</option>
+                                                                    <option value="page-13">13</option>
+                                                                    <option value="page-14">14</option>
+                                                                    <option value="page-15">15</option>
+                                                                    <option value="page-16">16</option>
+                                                                    <option value="page-17">17</option>
+                                                                    <option value="page-18">18</option>
+                                                                    <option value="page-19">19</option>
+                                                                    <option value="page-20">20</option>
+                                                                </select>
+                                                            </div>
+                                                            <div>OF 102</div>
+                                                        </div>
+                                                    </div><!-- .pagination-goto -->
+                                                </div><!-- .nk-block-between -->
+                                            </div><!-- .card-inner -->
+                                        </div><!-- .card-inner-group -->
+                                    </div><!-- .card -->
+                                </div><!-- .nk-block -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- wrap @e -->
+        </div>
+        <!-- main @e -->
+    </div>
+    <!-- app-root @e -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="addDepartment">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" data-bs-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+                <div class="modal-body modal-body-md">
+                    <h5 class="modal-title">Add Department</h5>
+                    <form action="#" class="mt-4">
+                        <div class="row g-gs">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Photo</label>
+                                    <div class="form-control-wrap">
+                                        <div class="form-file">
+                                            <input type="file" class="form-file-input" id="photo">
+                                            <label class="form-file-label" for="photo">Choose files</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Department</label>
+                                    <div class="form-control-wrap">
+                                        <select class="form-select js-select2" data-placeholder="Select Department">
+                                            <option value="">Department</option>
+                                            <option value="option_select_department">Anesthesiology</option>
+                                            <option value="option_select_department">Cardiology</option>
+                                            <option value="option_select_department">Dermatology</option>
+                                            <option value="option_select_department">Gastroenterology</option>
+                                            <option value="option_select_department">Double</option>
+                                            <option value="option_select_department">Gynaecology</option>
+                                            <option value="option_select_department">Medicine</option>
+                                            <option value="option_select_department">Neurology</option>
+                                            <option value="option_select_department">Orthopedic</option>
+                                            <option value="option_select_department">Otorhinolaryngology</option>
+                                            <option value="option_select_department">Radiology</option>
+                                            <option value="option_select_department">Surgery</option>
+                                            <option value="option_select_department">Urology</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="form-label">Description</label>
+                                    <div class="form-control-wrap">
+                                        <div class="quill-basic">
+                                            <p>Hello World!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--col-->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Status</label>
+                                    <div class="form-control-wrap">
+                                        <select class="form-select js-select2" data-placeholder="Select Status">
+                                            <option value="">Select</option>
+                                            <option value="default_option">Active</option>
+                                            <option value="option_select_status">Inactive</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-12">
+                                <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
+                                    <li>
+                                        <a href="#" data-bs-dismiss="modal" class="btn btn-primary">Add Department</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-bs-dismiss="modal" class="link link-light">Cancel</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- .modal-body -->
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div><!-- .modal -->
+    <!-- Edit Department-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="editDepartment">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" data-bs-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+                <div class="modal-body modal-body-md">
+                    <h5 class="modal-title">Update Department</h5>
+                    <form action="#" class="mt-4">
+                        <div class="row g-gs">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Photo</label>
+                                    <div class="form-control-wrap">
+                                        <div class="form-file">
+                                            <input type="file" class="form-file-input" id="editPhoto">
+                                            <label class="form-file-label" for="editPhoto">Choose files</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Department</label>
+                                    <div class="form-control-wrap">
+                                        <select class="form-select js-select2" data-placeholder="Select Department">
+                                            <option value="">Select</option>
+                                            <option value="option_select_department">Anesthesiology</option>
+                                            <option value="option_select_department">Cardiology</option>
+                                            <option value="option_select_department">Dermatology</option>
+                                            <option value="option_select_department">Gastroenterology</option>
+                                            <option value="option_select_department">Double</option>
+                                            <option value="option_select_department">Gynaecology</option>
+                                            <option value="option_select_department">Medicine</option>
+                                            <option value="option_select_department">Neurology</option>
+                                            <option value="option_select_department">Orthopedic</option>
+                                            <option value="option_select_department">Otorhinolaryngology</option>
+                                            <option value="option_select_department">Radiology</option>
+                                            <option value="option_select_department">Surgery</option>
+                                            <option value="option_select_department">Urology</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="form-label">Description</label>
+                                    <div class="form-control-wrap">
+                                        <div class="quill-basic">
+                                            <p>Anesthesiology is the medical specialty concerned with the total perioperative care of patients before, during and after surgery.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--col-->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Status</label>
+                                    <div class="form-control-wrap">
+                                        <select class="form-select js-select2" data-placeholder="Select Status">
+                                            <option value="">Select</option>
+                                            <option value="default_option">Active</option>
+                                            <option value="option_select_status">Inactive</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-12">
+                                <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
+                                    <li>
+                                        <a href="#" data-bs-dismiss="modal" class="btn btn-primary">Update</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-bs-dismiss="modal" class="link link-light">Cancel</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- .modal-body -->
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="./assets/js/bundle.js?ver=3.1.3"></script>
+    <script src="./assets/js/scripts.js?ver=3.1.3"></script>
+    <script src="./assets/js/charts/gd-hospital.js?ver=3.1.3"></script>
+    <link rel="stylesheet" href="./assets/css/editors/quill.css?ver=3.1.3">
+    <script src="./assets/js/libs/editors/quill.js?ver=3.1.3"></script>
+    <script src="./assets/js/editors.js?ver=3.1.3"></script>
+</body>
+
+</html>
