@@ -51,7 +51,7 @@
                                             <span class="nk-menu-icon"><em class="icon ni ni-dashboard"></em></span>
                                         </a>
                                     </li> -->
-                                    
+                                   
                                     <!-- <li class="nk-menu-item">
                                         <a href="#" class="nk-menu-link nk-menu-switch" data-target="navPages">
                                             <span class="nk-menu-icon"><em class="icon ni ni-files"></em></span>
@@ -193,7 +193,6 @@
                                     <span class="nk-menu-text">Dashboard</span>
                                 </a>
                             </li><!-- .nk-menu-item -->
-                            
                             <li class="nk-menu-item">
                                 <a href="subscriber/sub-appointments.html" class="nk-menu-link">
                                     <span class="nk-menu-icon"><em class="icon ni ni-note-add-fill"></em></span>
@@ -372,154 +371,214 @@
                     </div><!-- .container-fliud -->
                 </div>
                 <!-- main header @e -->
+                <!-- content @s -->
                 <div class="nk-content ">
                     <div class="container-fluid">
                         <div class="nk-content-inner">
                             <div class="nk-content-body">
                                 <div class="nk-block-head nk-block-head-sm">
-                                    <div class="nk-block-between g-3">
+                                    <div class="nk-block-between">
                                         <div class="nk-block-head-content">
-                                            <h3 class="nk-block-title page-title">Medicine details</h3>
-                                        </div>
-                                        <div class="nk-block-head-content">
-                                            <a href="html/pharmacy/medicine-list.html" class="btn btn-outline-light bg-white d-none d-sm-inline-flex"><em class="icon ni ni-arrow-left"></em><span>Back</span></a>
-                                            <a href="html/pharmacy/medicine-list.html" class="btn btn-icon btn-outline-light bg-white d-inline-flex d-sm-none"><em class="icon ni ni-arrow-left"></em></a>
-                                        </div>
-                                    </div>
-                                </div><!--.nk-block-head-->
+                                            <h3 class="nk-block-title page-title">Add Doctor/Nurse</h3>
+                                        </div><!-- .nk-block-head-content -->
+                                    </div><!-- .nk-block-between -->
+                                </div><!-- .nk-block-head -->
                                 <div class="nk-block">
                                     <div class="card card-bordered">
-                                        <div class="card-aside-wrap">
-                                            <div class="card-content">
-                                                <div class="card-inner">
-                                                    <div class="nk-block">
-                                                        <div class="nk-block-head nk-block-head-sm nk-block-between">
-                                                            <h5 class="title">Medicine Information</h5>
-                                                        </div><!-- .nk-block-head -->
-                                                        <div class="row gy-5">
-                                                            <div class="col-md-3 col-lg-2 col-6">
-                                                                <div class="profile-stats">
-                                                                    <span class="profile-ud-label">Name</span>
-                                                                    <span>Zimax</span>
-                                                                </div>
+                                        <div class="card-inner">
+                                            <div class="row gy-4">
+                                                <div class="col-xxl-3 col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="first-name">First Name</label>
+                                                        <div class="form-control-wrap">
+                                                            <input type="text" class="form-control" id="first-name" placeholder="First Name" required>
+                                                        </div>
+                                                    </div>
+                                                </div><!--col-->
+                                                <div class="col-xxl-3 col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="last-name">Last Name</label>
+                                                        <div class="form-control-wrap">
+                                                            <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                                                        </div>
+                                                    </div>
+                                                </div><!--col-->
+                                                <div class="col-xxl-3 col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Gender</label>
+                                                        <div class="form-control-wrap">
+                                                            <select class="form-select js-select2" data-placeholder="Select Gender">
+                                                                <option value="">Select Gender</option>
+                                                                <option value="option_select_gender">Male</option>
+                                                                <option value="option_select_gender">Female</option>
+                                                                <option value="option_select_gender">Other</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div><!--col-->
+                                                <div class="col-xxl-3 col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Date of Birth</label>
+                                                        <div class="form-control-wrap">
+                                                            <div class="form-icon form-icon-right">
+                                                                <em class="icon ni ni-calendar"></em>
                                                             </div>
-                                                            <div class="col-md-3 col-lg-2  col-6">
-                                                                <div class="profile-stats">
-                                                                    <span class="profile-ud-label">Generic Name</span>
-                                                                    <span>Azithromycin</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3 col-lg-2  col-6">
-                                                                <div class="profile-stats">
-                                                                    <span class="profile-ud-label">Weight</span>
-                                                                    <span>500mg</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3 col-lg-2  col-6">
-                                                                <div class="profile-stats">
-                                                                    <span class="profile-ud-label">Category</span>
-                                                                    <span>Tablet</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3 col-lg-2  col-6">
-                                                                <div class="profile-stats">
-                                                                    <span class="profile-ud-label">Manufacturer</span>
-                                                                    <span>Healthcare</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3 col-lg-2 col-6">
-                                                                <div class="profile-stats">
-                                                                    <span class="profile-ud-label">Expire Date</span>
-                                                                    <span>19/12/2020</span>
-                                                                </div>
+                                                            <input type="text" class="form-control date-picker-alt" data-date-format="yyyy-mm-dd" placeholder="yyyy-mm-dd">
+                                                        </div>
+                                                    </div>
+                                                </div><!--col-->
+                                                <div class="col-xxl-3 col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="phone-no">Phone</label>
+                                                        <div class="form-control-wrap">
+                                                            <input type="number" class="form-control" id="phone-no" placeholder="Phone no">
+                                                        </div>
+                                                    </div>
+                                                </div><!--col-->
+                                                <div class="col-xxl-3 col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="email">Email</label>
+                                                        <div class="form-control-wrap">
+                                                            <input type="email" class="form-control" id="email" placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                </div><!--col-->
+                                                <div class="col-xxl-3 col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label" for="password">Password</label>
+                                                        <div class="form-control-wrap">
+                                                            <input type="password" class="form-control" id="password" placeholder="Password">
+                                                        </div>
+                                                    </div>
+                                                </div><!--col-->
+                                                <div class="col-xxl-3 col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Adddress</label>
+                                                        <div class="form-control-wrap">
+                                                            <input type="text" class="form-control" id="address" placeholder="Address">
+                                                        </div>
+                                                    </div>
+                                                </div><!--col-->
+                                                <div class="col-xxl-3 col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Designation</label>
+                                                        <div class="form-control-wrap">
+                                                            <input type="text" class="form-control" id="designation" placeholder="Designation">
+                                                        </div>
+                                                    </div>
+                                                </div><!--col-->
+                                                <div class="col-xxl-3 col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Department</label>
+                                                        <div class="form-control-wrap">
+                                                            <select class="form-select js-select2" data-placeholder="Select Department">
+                                                                <option value="">Select</option>
+                                                                <option value="default_option">Allergy and immunology</option>
+                                                                <option value="option_select_department">Anesthesiology</option>
+                                                                <option value="option_select_department">Cardiology</option>
+                                                                <option value="option_select_department">Dermatology</option>
+                                                                <option value="option_select_department">Diagnostic radiology</option>
+                                                                <option value="option_select_department">Emergency medicine</option>
+                                                                <option value="option_select_department">Neurology</option>
+                                                                <option value="option_select_department">Obstetrics and gynecology</option>
+                                                                <option value="option_select_department">Ophthalmology</option>
+                                                                <option value="option_select_department">Pathology</option>
+                                                                <option value="option_select_department">Pediatrics</option>
+                                                                <option value="option_select_department">Psychiatry</option>
+                                                                <option value="option_select_department">Surgery</option>
+                                                                <option value="option_select_department">Urology</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div><!--col-->
+                                                <div class="col-xxl-3 col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Specialist</label>
+                                                        <div class="form-control-wrap">
+                                                            <input type="text" class="form-control" id="specialist" placeholder="Specialist">
+                                                        </div>
+                                                    </div>
+                                                </div><!--col-->
+                                                <div class="col-xxl-3 col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Upload Photo</label>
+                                                        <div class="form-control-wrap">
+                                                            <div class="form-file">
+                                                                <input type="file" multiple class="form-file-input" id="customFile">
+                                                                <label class="form-file-label" for="customFile">Choose file</label>
                                                             </div>
                                                         </div>
-                                                        <div class="row gy-5">
-                                                            <div class="col-md-3 col-lg-2 col-6">
-                                                                <div class="profile-stats">
-                                                                    <span class="profile-ud-label">Popularity</span>
-                                                                    <div>
-                                                                        <em class="icon ni ni-star-fill text-warning"></em>
-                                                                        <em class="icon ni ni-star-fill text-warning"></em>
-                                                                        <em class="icon ni ni-star-fill text-warning"></em>
-                                                                        <em class="icon ni ni-star-fill text-warning"></em>
-                                                                        <em class="icon ni ni-star-fill text-warning"></em>
-                                                                    </div>
-                                                                </div>
+                                                    </div>
+                                                </div><!--col-->
+                                                <div class="col-xxl-3 col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label">National ID</label>
+                                                        <div class="form-control-wrap">
+                                                            <div class="form-file">
+                                                                <input type="file" multiple class="form-file-input" id="nid">
+                                                                <label class="form-file-label" for="nid">Choose file</label>
                                                             </div>
                                                         </div>
-                                                    </div><!-- .nk-block -->
-                                                    <div class="nk-divider divider md"></div>
-                                                    <div class="nk-block">
-                                                        <div class="nk-block-head nk-block-head-sm nk-block-between">
-                                                            <h5 class="title">Stock</h5>
-                                                        </div><!-- .nk-block-head -->
-                                                        <div class="row gy-5">
-                                                            <div class="col-md-3 col-sm-4">
-                                                                <div class="profile-stats">
-                                                                    <span class="profile-ud-label">Starting Stock</span>
-                                                                    <span class="amount">230box</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3 col-sm-4">
-                                                                <div class="profile-stats">
-                                                                    <span class="profile-ud-label">Current Stock</span>
-                                                                    <span class="amount">180box</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3 col-sm-4">
-                                                                <div class="profile-stats">
-                                                                    <span class="profile-ud-label">Stock Status</span>
-                                                                    <span class="badge bg-primary">Available</span>
-                                                                </div>
+                                                    </div>
+                                                </div><!--col-->
+                                                <div class="col-xxl-3 col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Certificates</label>
+                                                        <div class="form-control-wrap">
+                                                            <div class="form-file">
+                                                                <input type="file" multiple class="form-file-input" id="certificates">
+                                                                <label class="form-file-label" for="certificates">Choose files</label>
                                                             </div>
                                                         </div>
-                                                        <div class="row gy-5">
-                                                            <div class="col-lg-4 col-8">
-                                                                <div class="profile-stats">
-                                                                    <span class="profile-ud-label">Remaining</span>
-                                                                    <div class="progress progress-lg">
-                                                                        <div class="progress-bar progress-bar-striped progress-bar-animated" data-progress="75">75%</div>
-                                                                    </div>
-                                                                </div>
+                                                    </div>
+                                                </div><!--col-->
+                                                <div class="col-xxl-3 col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Joining Date</label>
+                                                        <div class="form-control-wrap">
+                                                            <div class="form-icon form-icon-right">
+                                                                <em class="icon ni ni-calendar"></em>
+                                                            </div>
+                                                            <input type="text" class="form-control date-picker" data-date-format="yyyy-mm-dd" placeholder="yyyy-mm-dd">
+                                                        </div>
+                                                    </div>
+                                                </div><!--col-->
+                                                <div class="col-xxl-3 col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Status</label>
+                                                        <div class="form-control-wrap">
+                                                            <select class="form-select js-select2">
+                                                                <option value="default_option">Active</option>
+                                                                <option value="option_select_status">Inactive</option>
+                                                                <option value="option_select_status">Pending</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div><!--col-->
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Short Biography</label>
+                                                        <div class="form-control-wrap">
+                                                            <div class="quill-basic">
+                                                                <p>Hello World!</p>
                                                             </div>
                                                         </div>
-                                                    </div><!-- .nk-block -->
-                                                    <div class="nk-divider divider md"></div>
-                                                    <div class="nk-block">
-                                                        <div class="nk-block-head nk-block-head-sm nk-block-between">
-                                                            <h5 class="title">Estimate</h5>
-                                                        </div><!-- .nk-block-head -->
-                                                        <div class="row gy-5">
-                                                            <div class="col-md-3 col-sm-4">
-                                                                <div class="profile-stats">
-                                                                    <span class="profile-ud-label">Manufacture price</span>
-                                                                    <span class="amount">50.00USD</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3 col-sm-4">
-                                                                <div class="profile-stats">
-                                                                    <span class="profile-ud-label">Seeling price</span>
-                                                                    <span class="amount">60.00USD </span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-3 col-sm-4">
-                                                                <div class="profile-stats">
-                                                                    <span class="profile-ud-label">Wholesale Price</span>
-                                                                    <span class="amount">55.00USD</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div><!-- .nk-block -->
-                                                </div><!-- .card-inner -->
-                                            </div><!-- .card-content -->
-                                        </div><!-- .card-aside-wrap -->
+                                                    </div>
+                                                </div><!--col-->
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <button type="submit" class="btn btn-primary">Add Doctor/Nurse</button>
+                                                    </div>
+                                                </div><!--col-->
+                                            </div><!--row-->
+                                        </div><!-- .card-inner-group -->
                                     </div><!-- .card -->
                                 </div><!-- .nk-block -->
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- content @e -->
             </div>
             <!-- wrap @e -->
         </div>
@@ -532,6 +591,23 @@
     <script src="./assets/js/bundle.js?ver=3.1.3"></script>
     <script src="./assets/js/scripts.js?ver=3.1.3"></script>
     <script src="./assets/js/charts/gd-hospital.js?ver=3.1.3"></script>
+    <!-- <script language="JavaScript">
+        Webcam.set({
+            width: 150,
+            height: 60,
+            image_format: 'jpeg',
+            jpeg_quality: 90
+        });
+      
+        Webcam.attach( '#my_camera' );
+      
+        function take_snapshot() {
+            Webcam.snap( function(data_uri) {
+                $(".image-tag").val(data_uri);
+                document.getElementById('results').innerHTML = '<img src="'+data_uri+'"/>';
+            } );
+        }
+    </script> -->
 </body>
 
 </html>
