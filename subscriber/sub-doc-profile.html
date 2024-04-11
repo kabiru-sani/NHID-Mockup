@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+    <!-- <base href="../../"> -->
+    <base href="../">
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+    <!-- Page Title  -->
+    <title> Super Admin | Dashboard </title>
+    <!-- StyleSheets  -->
+    <link rel="stylesheet" href="./assets/css/dashlite.css?ver=3.1.3">
+    <link id="skin-default" rel="stylesheet" href="./assets/css/theme.css?ver=3.1.3">
+    <!-- webcam -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.min.js"></script>
+</head>
+
+<body class="nk-body ui-rounder npc-default has-sidebar ">
+    <div class="nk-app-root">
+        <div class="nk-sidebar" data-content="sidebarMenu">
+            <div class="nk-sidebar-bar">
+                <div class="nk-apps-brand">
+                    <a href="subscriber/subscriber-dashbaord.html" class="logo-link">
+                        <img class="logo-light logo-img" src="./assets/images/favicon.png" srcset="./assets/images/favicon.png 2x" alt="logo">
+                        <img class="logo-dark logo-img" src="./assets/images/favicon.png" srcset="./assets/images/favicon.png 2x" alt="logo-dark">
+                    </a>
+                </div>
+                <div class="nk-sidebar-element">
+                    <div class="nk-sidebar-body">
+                        <div class="nk-sidebar-content" data-simplebar>
+                            <div class="nk-sidebar-menu">
+                                <!-- Menu -->
+                                <ul class="nk-menu apps-menu">
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navPharmacy">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-capsule"></em></span>
+                                        </a>
+                                    </li>
+                                    <li class="nk-menu-item active">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navHospital">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-plus-medi"></em></span>
+                                        </a>
+                                    </li>
+                                    <!-- <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navDashboards">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-dashboard"></em></span>
+                                        </a>
+                                    </li> -->
+                                    
+                                    <!-- <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navPages">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-files"></em></span>
+                                        </a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navMisc">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-server"></em></span>
+                                        </a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navError">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-alert-c"></em></span>
+                                        </a>
+                                    </li>
+                                    <li class="nk-menu-hr"></li>
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link nk-menu-switch" data-target="navComponents">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-layers"></em></span>
+                                        </a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <!-- <div class="nk-sidebar-footer">
+                                <ul class="nk-menu nk-menu-md apps-menu">
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link" title="Settings">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-setting"></em></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-sidebar-main is-light">
+                <div class="nk-sidebar-inner" data-simplebar>
+                    <div class="nk-menu-content" data-content="navPharmacy">
+                        <h5 class="title">Pharmacy</h5>
+                        <ul class="nk-menu">
+                            <li class="nk-menu-item">
+                                <a href="subscriber/pharmacy-dash.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span>
+                                    <span class="nk-menu-text">Dashboard</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-capsule-fill"></em></span>
+                                    <span class="nk-menu-text">Medicine</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/add-medcine.html" class="nk-menu-link"><span class="nk-menu-text">Add Medicine</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/manage-medcine.html" class="nk-menu-link"><span class="nk-menu-text">Medicine List</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link"><span class="nk-menu-text">Medicine Details</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-home-fill"></em></span>
+                                    <span class="nk-menu-text">Manufacturer</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-manufacturer-list.html" class="nk-menu-link"><span class="nk-menu-text">Manufacturer List</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-manufacturer-ledger.html" class="nk-menu-link"><span class="nk-menu-text">Manufacturer Ledger</span></a>
+                                    </li>
+                                </ul>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-repeat"></em></span>
+                                    <span class="nk-menu-text">Return</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-add-waste-return.html" class="nk-menu-link"><span class="nk-menu-text">Add Wastage Return</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-waste-returns.html" class="nk-menu-link"><span class="nk-menu-text">Wastage Return List</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-add-manufacturer-return.html" class="nk-menu-link"><span class="nk-menu-text">Add Manufacturer Return</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-manufacturer-returns.html" class="nk-menu-link"><span class="nk-menu-text">Manufacturer Return List</span></a>
+                                    </li>
+                                </ul>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-activity-round-fill"></em></span>
+                                    <span class="nk-menu-text">Reports</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-sales-report.html" class="nk-menu-link"><span class="nk-menu-text">Sales Report</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-purchase-report.html" class="nk-menu-link"><span class="nk-menu-text">Purchase Report</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-stock-report.html" class="nk-menu-link"><span class="nk-menu-text">Stock Report</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li>
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-coin-alt-fill"></em></span>
+                                    <span class="nk-menu-text">Finance</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-income.html" class="nk-menu-link"><span class="nk-menu-text">Income</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-expense.html" class="nk-menu-link"><span class="nk-menu-text">Expence</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-invoices.html" class="nk-menu-link"><span class="nk-menu-text">Invoice List</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul><!-- .nk-menu -->
+                    </div>
+                    <div class="nk-menu-content menu-active" data-content="navHospital">
+                        <h5 class="title">Hospital Manegment</h5>
+                        <ul class="nk-menu">
+                            <li class="nk-menu-item">
+                                <a href="subscriber/subscriber-dashbaord.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span>
+                                    <span class="nk-menu-text">Dashboard</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            
+                            <li class="nk-menu-item">
+                                <a href="subscriber/sub-appointments.html" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-note-add-fill"></em></span>
+                                    <span class="nk-menu-text">Appointment List</span>
+                                </a>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                    <span class="nk-menu-text">Patient</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/add-patient.html" class="nk-menu-link"><span class="nk-menu-text">Add Patients</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/manage-patient.html" class="nk-menu-link"><span class="nk-menu-text">Manage Patients</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/patient-profile.html" class="nk-menu-link"><span class="nk-menu-text">Patient Profile</span></a>
+                                    </li>
+                                </ul><!-- .nk-menu-sub -->
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-plus-medi-fill"></em></span>
+                                    <span class="nk-menu-text">Doctors / Nurses</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-add-doctors.html" class="nk-menu-link"><span class="nk-menu-text">Add Doctor / Nurses</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-doctors.html" class="nk-menu-link"><span class="nk-menu-text">Doctors / Nurses</span></a>
+                                    </li>
+                                </ul>
+                            </li><!-- .nk-menu-item -->
+                            
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-activity-round-fill"></em></span>
+                                    <span class="nk-menu-text">Monitor Hospital</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-birth-report.html" class="nk-menu-link"><span class="nk-menu-text">Birth Report</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-blood-report.html" class="nk-menu-link"><span class="nk-menu-text">Blood Bank</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-death-report.html" class="nk-menu-link"><span class="nk-menu-text">Death Reports</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/sub-inventory-report.html" class="nk-menu-link"><span class="nk-menu-text">Inventory Items Reports</span></a>
+                                    </li>
+                                </ul>
+                            </li><!-- .nk-menu-item -->
+                            <li class="nk-menu-item has-sub">
+                                <a href="#" class="nk-menu-link nk-menu-toggle">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-plus-medi-fill"></em></span>
+                                    <span class="nk-menu-text">Hospital Beds</span>
+                                </a>
+                                <ul class="nk-menu-sub">
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link"><span class="nk-menu-text">Bed Group</span></a>
+                                    </li>
+                                    <li class="nk-menu-item">
+                                        <a href="#" class="nk-menu-link"><span class="nk-menu-text">Bed Allotment</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="#" class="nk-menu-link">
+                                    <span class="nk-menu-icon"><em class="icon ni ni-plus-medi-fill"></em></span>
+                                    <span class="nk-menu-text">Hospital Departments</span>
+                                </a>
+                            </li>
+                        </ul><!-- .nk-menu -->
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!-- main @s -->
+        <div class="nk-main ">
+            <!-- wrap @s -->
+            <div class="nk-wrap ">
+                <!-- main header @s -->
+                <div class="nk-header nk-header-fixed nk-header-fluid is-light">
+                    <div class="container-fluid">
+                        <div class="nk-header-wrap">
+                            <div class="nk-menu-trigger d-xl-none ms-n1">
+                                <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
+                            </div>
+                            <div class="nk-header-brand d-xl-none">
+                                <a href="super-admin-dashboard.html" class="logo-link">
+                                    <img class="logo-light logo-img" src="./assets/images/favicon.png" srcset="./assets/images/favicon.png 2x" alt="logo">
+                                    <img class="logo-dark logo-img" src="./assets/images/favicon.png" srcset="./assets/images/favicon.png 2x" alt="logo-dark">
+                                </a>
+                            </div><!-- .nk-header-brand -->
+                            <div class="nk-header-search ms-3 ms-xl-0">
+                                <em class="icon ni ni-search"></em>
+                                <input type="text" class="form-control border-transparent form-focus-none" placeholder="Search anything">
+                            </div><!-- .nk-header-news -->
+                            <div class="nk-header-tools">
+                                <ul class="nk-menu">
+                                    <li class="nk-menu-item">
+                                        <a href="subscriber/subscriber-dashbaord.html" class="nk-menu-link">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span>
+                                            <span class="nk-menu-text">Dashboard</span>
+                                        </a>
+                                    </li><!-- .nk-menu-item -->
+                                    <li class="nk-menu-item has-sub">
+                                        <a href="#patients" class="nk-menu-link nk-menu-toggle">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                            <span class="nk-menu-text">Patients</span>
+                                        </a>
+                                        <ul class="nk-menu-sub">
+                                            <li class="nk-menu-item">
+                                                <a href="subscriber/add-patient.html" class="nk-menu-link"><span class="nk-menu-text">Add Patient</span></a>
+                                            </li>
+                                            <li class="nk-menu-item">
+                                                <a href="subscriber/manage-patient.html" class="nk-menu-link"><span class="nk-menu-text">Manage Patient</span></a>
+                                            </li>
+                                        </ul><!-- .nk-menu-sub -->
+                                    </li><!-- .nk-menu-item -->
+                                    <li class="nk-menu-item has-sub">
+                                        <a href="#" class="nk-menu-link nk-menu-toggle">
+                                            <span class="nk-menu-icon"><em class="icon ni ni-capsule-fill"></em></span>
+                                            <span class="nk-menu-text">Parmacy</span>
+                                        </a>
+                                        <ul class="nk-menu-sub">
+                                            <li class="nk-menu-item">
+                                                <a href="subscriber/add-medcine.html" class="nk-menu-link"><span class="nk-menu-text">Add Medicine</span></a>
+                                            </li>
+                                            <li class="nk-menu-item">
+                                                <a href="subscriber/manage-medcine.html" class="nk-menu-link"><span class="nk-menu-text">Medicine List</span></a>
+                                            </li>
+                                        </ul><!-- .nk-menu-sub -->
+                                    </li><!-- .nk-menu-item -->
+                                </ul><!-- .nk-menu -->
+                            </div>
+                        </div><!-- .nk-header-wrap -->
+                    </div><!-- .container-fliud -->
+                </div>
+                <!-- main header @e -->
+                <!-- content @s -->
+                <div class="nk-content ">
+                    <div class="container-fluid">
+                        <div class="nk-content-inner">
+                            <div class="nk-content-body">
+                                <div class="nk-block-head">
+                                    <div class="nk-block-head-content">
+                                        <h2 class="nk-block-title page-title">My Profile</h2>
+                                        <div class="nk-block-des">
+                                            <p>You have full control to manage your own account setting. <span class="text-primary"><em class="icon ni ni-info"></em></span></p>
+                                        </div>
+                                    </div>
+                                </div><!-- .nk-block-head -->
+                                <div class="nk-block nk-block-lg">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <ul class="nav nav-tabs nav-tabs-card">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" data-bs-toggle="tab" href="#tabItem1"><span>Personal</span></a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#tabItem2"><span>Notification</span></a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#tabItem3"><span>Security</span></a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#tabItem4"><span>Activity</span></a>
+                                                </li>
+                                            </ul>
+                                            <div class="card-inner">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="tabItem1">
+                                                        <div class="nk-block">
+                                                            <div class="nk-block-head">
+                                                                <div class="nk-block-head-content">
+                                                                    <h5 class="nk-block-title">Personal Information</h5>
+                                                                    <div class="nk-block-des">
+                                                                        <p>Basic info, like your name and address, that you use on Nio Platform.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div><!-- .nk-block-head -->
+                                                            <div class="card">
+                                                                <div class="nk-data data-list">
+                                                                    <div class="data-item" data-bs-toggle="modal" data-bs-target="#profile-edit">
+                                                                        <div class="data-col">
+                                                                            <span class="data-label">Full Name</span>
+                                                                            <span class="data-value">Abu Bin Ishtiyak</span>
+                                                                        </div>
+                                                                        <div class="data-col data-col-end"><span class="data-more"><em class="icon ni ni-forward-ios"></em></span></div>
+                                                                    </div><!-- .data-item -->
+                                                                    <div class="data-item">
+                                                                        <div class="data-col">
+                                                                            <span class="data-label">Email</span>
+                                                                            <span class="data-value">info@softnio.com</span>
+                                                                        </div>
+                                                                        <div class="data-col data-col-end"><span class="data-more disable"><em class="icon ni ni-lock-alt"></em></span></div>
+                                                                    </div><!-- .data-item -->
+                                                                    <div class="data-item" data-bs-toggle="modal" data-bs-target="#profile-edit">
+                                                                        <div class="data-col">
+                                                                            <span class="data-label">Phone Number</span>
+                                                                            <span class="data-value text-soft">Not add yet</span>
+                                                                        </div>
+                                                                        <div class="data-col data-col-end"><span class="data-more"><em class="icon ni ni-forward-ios"></em></span></div>
+                                                                    </div><!-- .data-item -->
+                                                                    <div class="data-item" data-bs-toggle="modal" data-bs-target="#profile-edit">
+                                                                        <div class="data-col">
+                                                                            <span class="data-label">Date of Birth</span>
+                                                                            <span class="data-value">29 Feb, 1986</span>
+                                                                        </div>
+                                                                        <div class="data-col data-col-end"><span class="data-more"><em class="icon ni ni-forward-ios"></em></span></div>
+                                                                    </div><!-- .data-item -->
+                                                                    <div class="data-item" data-bs-toggle="modal" data-bs-target="#profile-edit">
+                                                                        <div class="data-col">
+                                                                            <span class="data-label">Address</span>
+                                                                            <span class="data-value">2337 Kildeer Drive,<br>Kentucky, Canada</span>
+                                                                        </div>
+                                                                        <div class="data-col data-col-end"><span class="data-more"><em class="icon ni ni-forward-ios"></em></span></div>
+                                                                    </div><!-- .data-item -->
+                                                                </div><!-- .nk-data -->
+                                                            </div>
+                                                            <!-- Another Section -->
+                                                            <div class="nk-block-head">
+                                                                <div class="nk-block-head-content">
+                                                                    <h5 class="nk-block-title">Personal Preferences</h5>
+                                                                    <div class="nk-block-des">
+                                                                        <p>Your personalized preference allows you best use.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div><!-- .nk-block-head -->
+                                                            <div class="card">
+                                                                <div class="nk-data data-list">
+                                                                    <div class="data-item">
+                                                                        <div class="data-col">
+                                                                            <span class="data-label">Language</span>
+                                                                            <span class="data-value">English (United State)</span>
+                                                                        </div>
+                                                                        <div class="data-col data-col-end"><a data-bs-toggle="modal" href="#profile-edit" class="link link-primary">Change Language</a></div>
+                                                                    </div><!-- .data-item -->
+                                                                    <div class="data-item">
+                                                                        <div class="data-col">
+                                                                            <span class="data-label">Date Format</span>
+                                                                            <span class="data-value">M d, YYYY</span>
+                                                                        </div>
+                                                                        <div class="data-col data-col-end"><a data-bs-toggle="modal" href="#profile-edit" class="link link-primary">Change</a></div>
+                                                                    </div><!-- .data-item -->
+                                                                    <div class="data-item">
+                                                                        <div class="data-col">
+                                                                            <span class="data-label">Timezone</span>
+                                                                            <span class="data-value">Bangladesh (GMT +6)</span>
+                                                                        </div>
+                                                                        <div class="data-col data-col-end"><a data-bs-toggle="modal" href="#profile-edit" class="link link-primary">Change</a></div>
+                                                                    </div><!-- .data-item -->
+                                                                </div><!-- .nk-data -->
+                                                            </div>
+                                                        </div><!-- .nk-block -->
+                                                    </div><!-- tab pane -->
+                                                    <div class="tab-pane" id="tabItem2">
+                                                        <div class="nk-block">
+                                                            <div class="nk-block-head nk-block-head-lg">
+                                                                <div class="nk-block-head-content">
+                                                                    <h5 class="nk-block-title">Notification Settings</h5>
+                                                                    <div class="nk-block-des">
+                                                                        <p>You will get only notification what have enabled.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div><!-- .nk-block-head -->
+                                                            <div class="nk-block-head nk-block-head-sm">
+                                                                <div class="nk-block-head-content">
+                                                                    <h6>Security Alerts</h6>
+                                                                    <p>You will get only those email notification what you want.</p>
+                                                                </div>
+                                                            </div><!-- .nk-block-head -->
+                                                            <div class="nk-block-content">
+                                                                <div class="gy-3">
+                                                                    <div class="g-item">
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" checked id="unusual-activity">
+                                                                            <label class="custom-control-label" for="unusual-activity">Email me whenever encounter unusual activity</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="g-item">
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="new-browser">
+                                                                            <label class="custom-control-label" for="new-browser">Email me if new browser is used to sign in</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div><!-- .nk-block-content -->
+                                                            <div class="nk-block-head nk-block-head-sm">
+                                                                <div class="nk-block-head-content">
+                                                                    <h6>News</h6>
+                                                                    <p>You will get only those email notification what you want.</p>
+                                                                </div>
+                                                            </div><!-- .nk-block-head -->
+                                                            <div class="nk-block-content">
+                                                                <div class="gy-3">
+                                                                    <div class="g-item">
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" checked id="latest-sale-news">
+                                                                            <label class="custom-control-label" for="latest-sale-news">Notify me by email about sales and latest news</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="g-item">
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="feature-update">
+                                                                            <label class="custom-control-label" for="feature-update">Email me about new features and updates</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="g-item">
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" checked id="account-tips">
+                                                                            <label class="custom-control-label" for="account-tips">Email me about tips on using account</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div><!-- .nk-block-content -->
+                                                        </div><!-- .nk-block -->
+                                                    </div><!--tab pane-->
+                                                    <div class="tab-pane" id="tabItem3">
+                                                        <div class="nk-block-head nk-block-head-lg">
+                                                            <div class="nk-block-head-content">
+                                                                <h5 class="nk-block-title">Security Settings</h5>
+                                                                <div class="nk-block-des">
+                                                                    <p>These settings are helps you keep your account secure.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div><!-- .nk-block-head -->
+                                                        <div class="nk-block">
+                                                            <div class="card card-bordered">
+                                                                <div class="card-inner-group">
+                                                                    <div class="card-inner">
+                                                                        <div class="between-center flex-wrap flex-md-nowrap g-3">
+                                                                            <div class="nk-block-text">
+                                                                                <h6>Save my Activity Logs</h6>
+                                                                                <p>You can save your all activity logs including unusual activity detected.</p>
+                                                                            </div>
+                                                                            <div class="nk-block-actions">
+                                                                                <ul class="align-center gx-3">
+                                                                                    <li class="order-md-last">
+                                                                                        <div class="custom-control custom-switch me-n2">
+                                                                                            <input type="checkbox" class="custom-control-input" checked="" id="activity-log">
+                                                                                            <label class="custom-control-label" for="activity-log"></label>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!-- .card-inner -->
+                                                                    <div class="card-inner">
+                                                                        <div class="between-center flex-wrap g-3">
+                                                                            <div class="nk-block-text">
+                                                                                <h6>Change Password</h6>
+                                                                                <p>Set a unique password to protect your account.</p>
+                                                                            </div>
+                                                                            <div class="nk-block-actions flex-shrink-sm-0">
+                                                                                <ul class="align-center flex-wrap flex-sm-nowrap gx-3 gy-2">
+                                                                                    <li class="order-md-last">
+                                                                                        <a href="#" class="btn btn-primary">Change Password</a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <em class="text-soft text-date fs-12px">Last changed: <span>Oct 2, 2019</span></em>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!-- .card-inner -->
+                                                                    <div class="card-inner">
+                                                                        <div class="between-center flex-wrap flex-md-nowrap g-3">
+                                                                            <div class="nk-block-text">
+                                                                                <h6>2 Factor Auth &nbsp; <span class="badge bg-success ms-0">Enabled</span></h6>
+                                                                                <p>Secure your account with 2FA security. When it is activated you will need to enter not only your password, but also a special code using app. You can receive this code by in mobile app. </p>
+                                                                            </div>
+                                                                            <div class="nk-block-actions">
+                                                                                <a href="#" class="btn btn-primary">Disable</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!-- .card-inner -->
+                                                                </div><!-- .card-inner-group -->
+                                                            </div><!-- .card -->
+                                                        </div><!-- .nk-block -->
+                                                    </div><!--tab pane-->
+                                                    <div class="tab-pane" id="tabItem4">
+                                                        <div class="nk-block-head nk-block-head-lg">
+                                                            <div class="nk-block-head-content">
+                                                                <h5 class="nk-block-title">Recent Activity</h5>
+                                                                <div class="nk-block-des">
+                                                                    <p>Here is your last 20 login activities log. <span class="text-soft"><em class="icon ni ni-info"></em></span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div><!-- .nk-block-head -->
+                                                        <div class="nk-block card card-bordered">
+                                                            <table class="table table-ulogs">
+                                                                <thead class="table-light">
+                                                                    <tr>
+                                                                        <th class="tb-col-os"><span class="overline-title">Browser <span class="d-sm-none">/ IP</span></span></th>
+                                                                        <th class="tb-col-ip"><span class="overline-title">IP</span></th>
+                                                                        <th class="tb-col-time"><span class="overline-title">Time</span></th>
+                                                                        <th class="tb-col-action"><span class="overline-title">&nbsp;</span></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="tb-col-os">Chrome on Window</td>
+                                                                        <td class="tb-col-ip"><span class="sub-text">192.149.122.128</span></td>
+                                                                        <td class="tb-col-time"><span class="sub-text">11:34 PM</span></td>
+                                                                        <td class="tb-col-action"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="tb-col-os">Mozilla on Window</td>
+                                                                        <td class="tb-col-ip"><span class="sub-text">86.188.154.225</span></td>
+                                                                        <td class="tb-col-time"><span class="sub-text">Nov 20, 2019 <span class="d-none d-sm-inline-block">10:34 PM</span></span></td>
+                                                                        <td class="tb-col-action"><a href="#" class="link-cross me-sm-n1"><em class="icon ni ni-cross"></em></a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="tb-col-os">Chrome on iMac</td>
+                                                                        <td class="tb-col-ip"><span class="sub-text">192.149.122.128</span></td>
+                                                                        <td class="tb-col-time"><span class="sub-text">Nov 12, 2019 <span class="d-none d-sm-inline-block">08:56 PM</span></span></td>
+                                                                        <td class="tb-col-action"><a href="#" class="link-cross me-sm-n1"><em class="icon ni ni-cross"></em></a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="tb-col-os">Chrome on Window</td>
+                                                                        <td class="tb-col-ip"><span class="sub-text">192.149.122.128</span></td>
+                                                                        <td class="tb-col-time"><span class="sub-text">Nov 03, 2019 <span class="d-none d-sm-inline-block">04:29 PM</span></span></td>
+                                                                        <td class="tb-col-action"><a href="#" class="link-cross me-sm-n1"><em class="icon ni ni-cross"></em></a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="tb-col-os">Mozilla on Window</td>
+                                                                        <td class="tb-col-ip"><span class="sub-text">86.188.154.225</span></td>
+                                                                        <td class="tb-col-time"><span class="sub-text">Oct 29, 2019 <span class="d-none d-sm-inline-block">09:38 AM</span></span></td>
+                                                                        <td class="tb-col-action"><a href="#" class="link-cross me-sm-n1"><em class="icon ni ni-cross"></em></a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="tb-col-os">Chrome on iMac</td>
+                                                                        <td class="tb-col-ip"><span class="sub-text">192.149.122.128</span></td>
+                                                                        <td class="tb-col-time"><span class="sub-text">Oct 23, 2019 <span class="d-none d-sm-inline-block">04:16 PM</span></span></td>
+                                                                        <td class="tb-col-action"><a href="#" class="link-cross me-sm-n1"><em class="icon ni ni-cross"></em></a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="tb-col-os">Chrome on Window</td>
+                                                                        <td class="tb-col-ip"><span class="sub-text">192.149.122.128</span></td>
+                                                                        <td class="tb-col-time"><span class="sub-text">Oct 15, 2019 <span class="d-none d-sm-inline-block">11:41 PM</span></span></td>
+                                                                        <td class="tb-col-action"><a href="#" class="link-cross me-sm-n1"><em class="icon ni ni-cross"></em></a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="tb-col-os">Mozilla on Window</td>
+                                                                        <td class="tb-col-ip"><span class="sub-text">86.188.154.225</span></td>
+                                                                        <td class="tb-col-time"><span class="sub-text">Oct 13, 2019 <span class="d-none d-sm-inline-block">05:43 AM</span></span></td>
+                                                                        <td class="tb-col-action"><a href="#" class="link-cross me-sm-n1"><em class="icon ni ni-cross"></em></a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="tb-col-os">Chrome on iMac</td>
+                                                                        <td class="tb-col-ip"><span class="sub-text">192.149.122.128</span></td>
+                                                                        <td class="tb-col-time"><span class="sub-text">Oct 03, 2019 <span class="d-none d-sm-inline-block">04:12 AM</span></span></td>
+                                                                        <td class="tb-col-action"><a href="#" class="link-cross me-sm-n1"><em class="icon ni ni-cross"></em></a></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div><!-- .nk-block -->
+                                                    </div><!--tab pane-->
+                                                </div><!--tab content-->
+                                            </div><!--card inner-->
+                                        </div><!-- .card-content -->
+                                    </div><!--card-->
+                                </div><!--nk block lg-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content @e -->
+            </div>
+            <!-- wrap @e -->
+        </div>
+        <!-- main @e -->
+    </div>
+    <!-- app-root @e -->
+    <!-- select region modal -->
+    
+    <!-- JavaScript -->
+    <script src="./assets/js/bundle.js?ver=3.1.3"></script>
+    <script src="./assets/js/scripts.js?ver=3.1.3"></script>
+    <script src="./assets/js/charts/gd-hospital.js?ver=3.1.3"></script>
+</body>
+
+</html>
