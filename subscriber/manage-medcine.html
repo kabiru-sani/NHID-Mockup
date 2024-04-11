@@ -258,15 +258,15 @@
                                 </a>
                                 <ul class="nk-menu-sub">
                                     <li class="nk-menu-item">
-                                        <a href="#" class="nk-menu-link"><span class="nk-menu-text">Bed Group</span></a>
+                                        <a href="subscriber/sub-bed-group.html" class="nk-menu-link"><span class="nk-menu-text">Bed Group</span></a>
                                     </li>
                                     <li class="nk-menu-item">
-                                        <a href="#" class="nk-menu-link"><span class="nk-menu-text">Bed Allotment</span></a>
+                                        <a href="subscriber/sub-bed-allotment.html" class="nk-menu-link"><span class="nk-menu-text">Bed Allotment</span></a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="#" class="nk-menu-link">
+                                <a href="subscriber/sub-departments.html" class="nk-menu-link">
                                     <span class="nk-menu-icon"><em class="icon ni ni-plus-medi-fill"></em></span>
                                     <span class="nk-menu-text">Hospital Departments</span>
                                 </a>
@@ -399,11 +399,60 @@
                                                         <li>
                                                             <div class="drodown">
                                                                 <a href="#" class="dropdown-toggle btn btn-white btn-dim btn-outline-light" data-bs-toggle="dropdown"><em class="d-none d-sm-inline icon ni ni-filter-alt"></em><span><span class="d-none d-md-inline"></span>Filtered By</span><em class="dd-indc icon ni ni-chevron-right"></em></a>
-                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                <div class="dropdown-menu dropdown-menu-end" style="padding: 10px;">
                                                                     <ul class="link-list-opt no-bdr">
-                                                                        <li><a href="#"><span>Alphabetically, A-Z</span></a></li>
-                                                                        <li><a href="#"><span>Alphabetically, Z-A</span></a></li>
-                                                                        <li><a href="#"><span>Best Selling</span></a></li>
+                                                                        <div class="col-12">
+                                                                            <div class="form-group">
+                                                                                <label class="overline-title overline-title-alt">Date Manufactured</label>
+                                                                                <div class="form-control-wrap">
+                                                                                    <div class="form-icon form-icon-right">
+                                                                                        <em class="icon ni ni-calendar"></em>
+                                                                                    </div>
+                                                                                    <input type="text" class="form-control date-picker" data-date-format="dd-mm-yyyy" placeholder="dd-mm-yyyy">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <br>
+                                                                        <div class="col-12">
+                                                                            <div class="form-group">
+                                                                                <label class="overline-title overline-title-alt">Manufacturer Name</label>
+                                                                                <select class="form-select js-select2">
+                                                                                    <option value="any">XYZ Manufacturer</option>
+                                                                                    <option value="ev">Manufacturer A</option>
+                                                                                    <option value="ve">Manufacturer B</option>
+                                                                                    <option value="ti">Manufacturer C</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <br>
+
+                                                                        <div class="row">
+                                                                            <label class="overline-title overline-title-alt">Expiry Date Range</label>
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <div class="form-control-wrap">
+                                                                                        <div class="form-icon form-icon-right">
+                                                                                            <em class="icon ni ni-calendar"></em>
+                                                                                        </div>
+                                                                                        <input type="text" class="form-control date-picker" data-date-format="dd-mm-yyyy" placeholder="dd-mm-yyyy">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-6">
+                                                                                <div class="form-group">
+                                                                                    <!-- <label class="overline-title overline-title-alt">Expiry Date</label> -->
+                                                                                    <div class="form-control-wrap">
+                                                                                        <div class="form-icon form-icon-right">
+                                                                                            <em class="icon ni ni-calendar"></em>
+                                                                                        </div>
+                                                                                        <input type="text" class="form-control date-picker" data-date-format="dd-mm-yyyy" placeholder="dd-mm-yyyy">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                        
                                                                     </ul>
                                                                 </div>
                                                             </div>
