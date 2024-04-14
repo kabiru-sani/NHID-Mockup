@@ -185,7 +185,7 @@
                         </ul><!-- .nk-menu -->
                     </div>
                     <div class="nk-menu-content menu-active" data-content="navHospital">
-                        <h5 class="title">Hospital Manegment</h5>
+                        <h5 class="title">Hospital Assets</h5>
                         <ul class="nk-menu">
                             <li class="nk-menu-item">
                                 <a href="subscriber/subscriber-dashbaord.html" class="nk-menu-link">
@@ -437,6 +437,31 @@
                                                                                         </div>
                                                                                         <div class="dropdown-body dropdown-body-rg">
                                                                                             <div class="row gx-6 gy-3">
+                                                                                                <div class="col-12">
+                                                                                                    <div class="form-group">
+                                                                                                        <label class="overline-title overline-title-alt">Cause of Death</label>
+                                                                                                        <select class="form-select js-select2">
+                                                                                                            <option value="any">---Select--</option>
+                                                                                                            <option value="male">Disease Related</option>
+                                                                                                            <option value="female">Drug Related</option>
+                                                                                                            <option value="female">Accident Related</option>
+                                                                                                            <option value="female">Others</option>
+                                                                                                        </select>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-6">
+                                                                                                    <div class="form-group">
+                                                                                                        <label class="overline-title overline-title-alt">Age Range</label>
+                                                                                                        <select class="form-select js-select2">
+                                                                                                            <option value="any">---Select--</option>
+                                                                                                            <option value="male">0-5</option>
+                                                                                                            <option value="female">6-12</option>
+                                                                                                            <option value="female">13-19</option>
+                                                                                                            <option value="female">20-29</option>
+                                                                                                            <option value="female">30-Above</option>
+                                                                                                        </select>
+                                                                                                    </div>
+                                                                                                </div>
                                                                                                 <div class="col-6">
                                                                                                     <div class="form-group">
                                                                                                         <label class="overline-title overline-title-alt">Gender</label>
@@ -449,7 +474,18 @@
                                                                                                 </div>
                                                                                                 <div class="col-6">
                                                                                                     <div class="form-group">
-                                                                                                        <label class="overline-title overline-title-alt">Date</label>
+                                                                                                        <label class="overline-title overline-title-alt">Date Range Start</label>
+                                                                                                        <div class="form-control-wrap">
+                                                                                                            <div class="form-icon form-icon-right">
+                                                                                                                <em class="icon ni ni-calendar"></em>
+                                                                                                            </div>
+                                                                                                            <input type="text" class="form-control date-picker" data-date-format="dd-mm-yyyy" placeholder="dd-mm-yyyy">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="col-6">
+                                                                                                    <div class="form-group">
+                                                                                                        <label class="overline-title overline-title-alt">Date Range Stop</label>
                                                                                                         <div class="form-control-wrap">
                                                                                                             <div class="form-icon form-icon-right">
                                                                                                                 <em class="icon ni ni-calendar"></em>

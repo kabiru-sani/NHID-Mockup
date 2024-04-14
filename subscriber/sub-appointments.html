@@ -185,7 +185,7 @@
                         </ul><!-- .nk-menu -->
                     </div>
                     <div class="nk-menu-content menu-active" data-content="navHospital">
-                        <h5 class="title">Hospital Manegment</h5>
+                        <h5 class="title">Hospital Assets</h5>
                         <ul class="nk-menu">
                             <li class="nk-menu-item">
                                 <a href="subscriber/subscriber-dashbaord.html" class="nk-menu-link">
@@ -640,6 +640,7 @@
                                                                         <div class="dropdown-menu dropdown-menu-end">
                                                                             <ul class="link-list-opt no-bdr">
                                                                                 <li><a data-bs-toggle="modal" href="#editAppointment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a data-bs-toggle="modal" href="#editInPatient"><em class="icon ni ni-curve-up-right"></em><span>Refer/Transfer</span></a></li>
                                                                                 <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
                                                                             </ul>
                                                                         </div>
@@ -717,6 +718,7 @@
                                                                         <div class="dropdown-menu dropdown-menu-end">
                                                                             <ul class="link-list-opt no-bdr">
                                                                                 <li><a data-bs-toggle="modal" href="#editAppointment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a data-bs-toggle="modal" href="#editInPatient"><em class="icon ni ni-curve-up-right"></em><span>Refer/Transfer</span></a></li>
                                                                                 <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
                                                                             </ul>
                                                                         </div>
@@ -794,6 +796,7 @@
                                                                         <div class="dropdown-menu dropdown-menu-end">
                                                                             <ul class="link-list-opt no-bdr">
                                                                                 <li><a data-bs-toggle="modal" href="#editAppointment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a data-bs-toggle="modal" href="#editInPatient"><em class="icon ni ni-curve-up-right"></em><span>Refer/Transfer</span></a></li>
                                                                                 <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
                                                                             </ul>
                                                                         </div>
@@ -871,6 +874,7 @@
                                                                         <div class="dropdown-menu dropdown-menu-end">
                                                                             <ul class="link-list-opt no-bdr">
                                                                                 <li><a data-bs-toggle="modal" href="#editAppointment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a data-bs-toggle="modal" href="#editInPatient"><em class="icon ni ni-curve-up-right"></em><span>Refer/Transfer</span></a></li>
                                                                                 <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
                                                                             </ul>
                                                                         </div>
@@ -948,6 +952,7 @@
                                                                         <div class="dropdown-menu dropdown-menu-end">
                                                                             <ul class="link-list-opt no-bdr">
                                                                                 <li><a data-bs-toggle="modal" href="#editAppointment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a data-bs-toggle="modal" href="#editInPatient"><em class="icon ni ni-curve-up-right"></em><span>Refer/Transfer</span></a></li>
                                                                                 <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
                                                                             </ul>
                                                                         </div>
@@ -1025,6 +1030,7 @@
                                                                         <div class="dropdown-menu dropdown-menu-end">
                                                                             <ul class="link-list-opt no-bdr">
                                                                                 <li><a data-bs-toggle="modal" href="#editAppointment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a data-bs-toggle="modal" href="#editInPatient"><em class="icon ni ni-curve-up-right"></em><span>Refer/Transfer</span></a></li>
                                                                                 <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
                                                                             </ul>
                                                                         </div>
@@ -1102,6 +1108,7 @@
                                                                         <div class="dropdown-menu dropdown-menu-end">
                                                                             <ul class="link-list-opt no-bdr">
                                                                                 <li><a data-bs-toggle="modal" href="#editAppointment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a data-bs-toggle="modal" href="#editInPatient"><em class="icon ni ni-curve-up-right"></em><span>Refer/Transfer</span></a></li>
                                                                                 <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
                                                                             </ul>
                                                                         </div>
@@ -1178,6 +1185,7 @@
                                                                         <div class="dropdown-menu dropdown-menu-end">
                                                                             <ul class="link-list-opt no-bdr">
                                                                                 <li><a data-bs-toggle="modal" href="#editAppointment"><em class="icon ni ni-edit"></em><span>Edit</span></a></li>
+                                                                                <li><a data-bs-toggle="modal" href="#editInPatient"><em class="icon ni ni-curve-up-right"></em><span>Refer/Transfer</span></a></li>
                                                                                 <li><a href="#"><em class="icon ni ni-trash"></em><span>Delete</span></a></li>
                                                                             </ul>
                                                                         </div>
@@ -1611,6 +1619,132 @@
                                 <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
                                     <li>
                                         <button data-bs-dismiss="modal" class="btn btn-primary">Update</button>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link link-light" data-bs-dismiss="modal">Cancel</a>
+                                    </li>
+                                </ul>
+                            </div><!-- .col -->
+                        </div>
+                    </form>
+                </div><!-- .modal-body -->
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="editInPatient">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" data-bs-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+                <div class="modal-body modal-body-md">
+                    <h5 class="modal-title">Refer / Transfer Patient</h5>
+                    <form action="#" class="mt-4">
+                        <div class="row g-gs">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="editName">Name</label>
+                                    <div class="form-control-wrap">
+                                        <input type="text" class="form-control" id="editName" value="Abu Bin Isthiyak" placeholder="Name">
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="editEmail">Email</label>
+                                    <div class="form-control-wrap">
+                                        <input type="email" class="form-control" id="editEmail" value="info@softnio.com" placeholder="example@email.com">
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                            
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">Transfer Hospital</label>
+                                    <div class="form-control-wrap">
+                                        <select class="form-select js-select2" data-placeholder="Select Gender">
+                                            <option value="">Select Transfer Hospital</option>
+                                            <option value="option_select_sex">Hospital A</option>
+                                            <option value="option_select_sex">Hospital B</option>
+                                            <option value="option_select_sex">Hospital C</option>
+                                            <option value="option_select_sex">Hospital D</option>
+                                            <option value="option_select_sex">Hospital E</option>
+                                            <option value="option_select_sex">Hospital F</option>
+                                            <option value="option_select_sex">Hospital G</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Bed Group</label>
+                                    <div class="form-control-wrap">
+                                        <select class="form-select js-select2" data-placeholder="Select Bed Group">
+                                            <option value="">Select</option>
+                                            <option value="option_select_bed">Cabin - 4th Floor</option>
+                                            <option value="option_select_bed">Male Ward - 1st Floor</option>
+                                            <option value="option_select_bed">Female Ward - 1st Floor</option>
+                                            <option value="option_select_bed">Private Ward - 2nd Floor</option>
+                                            <option value="option_select_bed">Cabin - 4th Floor</option>
+                                            <option value="option_select_bed">ICU - 3rd Floor</option>
+                                            <option value="option_select_bed">NICU - 3rd Floor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Bed Number</label>
+                                    <div class="form-control-wrap">
+                                        <select class="form-select js-select2" data-placeholder="Select multiple options">
+                                            <option value="default_option">201</option>
+                                            <option value="option_select_bednum">101</option>
+                                            <option value="option_select_bednum">102</option>
+                                            <option value="option_select_bednum">103</option>
+                                            <option value="option_select_bednum">105</option>
+                                            <option value="option_select_bednum">201</option>
+                                            <option value="option_select_bednum">202</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Consulant By</label>
+                                    <div class="form-control-wrap">
+                                        <select class="form-select js-select2" data-placeholder="Select multiple options">
+                                            <option value="default_option">Ernesto Vargas</option>
+                                            <option value="option_select_consulant">Ernesto Vargas</option>
+                                            <option value="option_select_consulant">Janet Snyder</option>
+                                            <option value="option_select_consulant">Amelia Grant</option>
+                                            <option value="option_select_consulant">Debra Grant</option>
+                                            <option value="option_select_consulant">Snyder Debra</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="testLabel">Test Reports</label>
+                                    <div class="form-control-wrap">
+                                        <div class="form-file">
+                                            <input type="file" multiple class="form-file-input" id="testReport">
+                                            <label class="form-file-label" for="testReport">Choose files</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">Reason(s) for Transfer</label>
+                                    <div class="form-control-wrap">
+                                        <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
+                                    </div>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-12">
+                                <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
+                                    <li>
+                                        <button data-bs-dismiss="modal" class="btn btn-primary">Transfer</button>
                                     </li>
                                     <li>
                                         <a href="#" class="link link-light" data-bs-dismiss="modal">Cancel</a>
